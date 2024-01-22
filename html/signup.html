@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" href="/assets/css/login_signup.css" />
+  </head>
+  <body>
+    <div class="mfp-content">
+      <div id="pop_signup" class="pop_win mfp-with-anim">
+        <div class="h1">회원가입</div>
+        <div class="cont">
+          <a href="#naver" class="btn btn_naver" id="naversignup">
+            <img
+              src="/assets/images/login_signup/naver_login.gif"
+              width="18"
+              alt="N"
+              class="naver_icon"
+            />
+            네이버로 시작하기
+          </a>
+          <br /><br />
+          <a href="#kakao" class="btn btn_kakao" id="kakaosignup">
+            <img
+              src="/assets/images/login_signup/kakao_login.gif"
+              width="18"
+              alt="K"
+              class="kakao_icon"
+            />
+            카카오로 시작하기
+          </a>
+          <br /><br />
+          <a href="#fb" class="btn btn_fb" onclick="fbLogin(); return false;">
+            <img
+              src="/assets/images/login_signup/facebook_login.gif"
+              width="18"
+              alt="F"
+              class="fb_icon"
+            />
+            페이스북으로 등록</a
+          >
+          <br /><br />
+          <a href="#google" class="btn btn_google" id="googlelogin">
+            <img
+              src="/assets/images/login_signup/google.png"
+              width="18"
+              alt="G"
+              class="google_icon"
+            />
+            구글 로그인
+          </a>
+          <div class="label">또는 이메일로 로그인 하세요.</div>
+
+          <div class="label">이메일로 등록</div>
+          <form name="frmSignup" id="frmSignup" method="post" action="/home">
+            <input type="hidden" name="mode" value="email" />
+
+            <span class="half fname">
+              <input
+                type="text"
+                class="text"
+                name="last_name"
+                placeholder="성"
+              />
+            </span>
+            <span class="half">
+              <input
+                type="text"
+                class="text"
+                name="first_name"
+                placeholder="이름"
+              />
+            </span>
+            <input
+              type="text"
+              class="text"
+              name="email"
+              placeholder="이메일 주소"
+            />
+            <input
+              type="password"
+              class="text"
+              name="passwd"
+              placeholder="비밀번호"
+            />
+            <div class="label2">
+              <label
+                ><input type="checkbox" name="agree" value="1" /> 회원가입함과
+                동시에 위홈의
+                <a href="/terms" target="_blank">서비스 이용약관</a> 및
+                <a href="/privacy" target="_blank">정보보호정책</a>에
+                동의합니다.</label
+              >
+            </div>
+            <button name="go" class="btn btn_login">회원가입</button>
+          </form>
+        </div>
+        <div class="pop_btm">
+          기존 가입자이십니까? <a href="/html/login.html" class="open_login">로그인</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

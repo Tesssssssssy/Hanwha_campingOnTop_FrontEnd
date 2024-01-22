@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="/assets/css/login_signup.css" />
+  </head>
+  <body>
+    <div id="pop_login" class="login">
+      <div class="h1">로그인</div>
+      <div class="login_cont">
+        <a href="#naver" class="btn btn_naver" id="naverlogin">
+          <img
+            src="/assets/images/login_signup/naver_login.gif"
+            width="18"
+            alt="N"
+            class="naver_icon"
+          />
+          네이버 로그인
+        </a>
+        <br /><br />
+        <a href="#kakao" class="btn btn_kakao" id="kakaologin">
+          <img
+            src="/assets/images/login_signup/kakao_login.gif"
+            width="18"
+            alt="K"
+            class="kakao_icon"
+          />
+          카카오 로그인
+        </a>
+        <br /><br />
+        <a href="#fb" class="btn btn_fb" onclick="fbLogin(); return false;">
+          <img
+            src="/assets/images/login_signup/facebook_login.gif"
+            width="18"
+            alt="F"
+            class="fb_icon"
+          />
+          페이스북 로그인
+        </a>
+        <br /><br />
+        <a href="#google" class="btn btn_google" id="googlelogin">
+          <img
+            src="/assets/images/login_signup/google.png"
+            width="18"
+            alt="G"
+            class="google_icon"
+          />
+          구글 로그인
+        </a>
+        <div class="label">또는 이메일로 로그인 하세요.</div>
+        <form
+          name="frmLogin"
+          id="frmLogin"
+          method="post"
+          action="/home/login_auth"
+        >
+          <input type="hidden" name="mode" value="email" />
+          <input
+            type="text"
+            class="text"
+            name="email"
+            placeholder="이메일 주소"
+          />
+          <input
+            type="password"
+            class="text"
+            name="passwd"
+            placeholder="비밀번호"
+          />
+          <div class="label2">
+            <label
+              ><input type="checkbox" name="remember" value="1" /> 아이디
+              저장하기</label
+            >
+            <a href="#" class="forget_passwd">비밀번호 찾기</a>
+          </div>
+          <button name="go" class="btn btn_login">로그인</button>
+        </form>
+      </div>
+      <div class="pop_btm">
+        가입하지 않으셨나요?
+        <a href="/html/signup.html" class="open_signup">회원가입</a>
+      </div>
+    </div>
+    </div>
+
+
+    <script>
+    
+      fetch('//html/header.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('dynamicHeader').innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
