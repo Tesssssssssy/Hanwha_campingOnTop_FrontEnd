@@ -56,7 +56,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-    <link rel="stylesheet" href="/assets/css/login_signup.css" />
+    <link rel="stylesheet" href="/assets/css/signup.css" />
 
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -442,70 +442,104 @@
         </div>
     </header>
  
-    <div class="signup_main">
-        <div id="pop_signup" class="pop_win mfp-with-anim">
-          <div class="siunuup"><h1>회원가입</h1></div>
-          <div class="cont">
-            <a href="#naver" class="btn btn_naver" id="naversignup">
-              <img
-                src="/assets/images/login_signup/naver_login.gif"
-                width="18"
-                alt="N"
-                class="naver_icon"
-              />
-              네이버로 시작하기
-            </a>
-            <br /><br />
-            <a href="#kakao" class="btn btn_kakao" id="kakaosignup">
-              <img
-                src="/assets/images/login_signup/kakao_login.gif"
-                width="18"
-                alt="K"
-                class="kakao_icon"
-              />
-              카카오로 시작하기
-            </a>
-            <br /><br />
-            <a href="#fb" class="btn btn_fb" onclick="fbLogin(); return false;">
-              <img
-                src="/assets/images/login_signup/facebook_login.gif"
-                width="18"
-                alt="F"
-                class="fb_icon"
-              />
-              페이스북으로 등록</a
-            >
-            <br /><br />
-            <a href="#google" class="btn btn_google" id="googlelogin">
-              <img
-                src="/assets/images/login_signup/google.png"
-                width="18"
-                alt="G"
-                class="google_icon"
-              />
-              구글 계정으로 시작하기
-            </a>
-            <div class="label">또는 이메일로 로그인 하세요.</div>
-            
-              <div class="label3">
-                <label
-                  ><input type="checkbox" name="agree" value="1" /> 회원가입함과
-                  동시에 위홈의
-                  <a href="/terms" target="_blank">서비스 이용약관</a> 및
-                  <a href="/privacy" target="_blank">정보보호정책</a>에
-                  동의합니다.</label
+    <div class="signup-contents-wrapper">
+        <h2 class="signup-title">간편가입</h2>
+        <div offset="100px" class="signup-contents">
+          <i step="1" class="signup-progress-icon step1"></i>
+  
+          <div class="signup-agreement-wrapper">
+            <h3 class="signup-agreement-info">캠핑온탑 서비스 이용약관에<br />동의해주세요.</h3>
+            <div id="signup-contents">
+              <div class="all-agreement-wrapper">
+                <span onclick="allAgree()" class="all-agreement-span"
+                  ><input
+                    class="all-agreement-input agreement-check"
+                    name="all"
+                    type="checkbox"
+                  /><label class="all-agreement-label" for="all" title="all"
+                    >모두 동의 (선택 정보 포함)</label
+                  ></span
                 >
               </div>
-              <button name="go" class="btn btn_login">회원가입</button>
-            </form>
-          </div>
-          <div class="pop_btm">
-            기존 가입자이십니까? <a href="/html/login.html" class="open_login">로그인</a>
+              <ul class="agreement-wrapper">
+                <div class="agreement-item-wrapper">
+                  <span onclick="agree(this)" type="join" class="agreement-span"
+                    ><input
+                      id="test"
+                      class="agreement-input agreement-check required"
+                      name="age"
+                      type="checkbox"
+                    /><label class="agreement-label" for="age" title="age"
+                      >[필수] 만 14세 이상입니다</label
+                    ></span
+                  >
+                </div>
+                <div class="agreement-item-wrapper">
+                  <span onclick="agree(this)" type="join" class="agreement-span"
+                    ><input
+                      class="agreement-input agreement-check required"
+                      name="term"
+                      type="checkbox"
+                    /><label class="agreement-label" for="term" title="term"
+                      >[필수] 이용약관 동의</label
+                    ></span
+                  >
+                </div>
+                <div class="agreement-item-wrapper">
+                  <span onclick="agree(this)" type="join" class="agreement-span"
+                    ><input
+                      class="agreement-input agreement-check required"
+                      name="requiredPrivacy"
+                      type="checkbox"
+                    /><label
+                      class="agreement-label"
+                      for="requiredPrivacy"
+                      title="requiredPrivacy"
+                      >[필수] 개인정보 수집 및 이용 동의</label
+                    ></span
+                  >
+                </div>
+                <div class="agreement-item-wrapper">
+                  <span onclick="agree(this)" type="join" class="agreement-span"
+                    ><input
+                      class="agreement-input agreement-check"
+                      name="marketingPrivacy"
+                      type="checkbox"
+                    /><label
+                      class="agreement-label"
+                      for="marketingPrivacy"
+                      title="marketingPrivacy"
+                      >[선택] 마케팅 목적의 개인정보 수집 및 이용 동의</label
+                    ></span
+                  >
+                </div>
+                <div class="agreement-item-wrapper">
+                  <span onclick="agree(this)" type="join" class="agreement-span"
+                    ><input
+                      class="agreement-input agreement-check"
+                      name="advertising"
+                      type="checkbox"
+                    /><label
+                      class="agreement-label"
+                      for="advertising"
+                      title="advertising"
+                      >[선택] 광고성 정보 수신 동의</label
+                    ></span
+                  >
+                </div>
+              </ul>
+              <button
+                onclick="next()"
+                class="signup-progress-btn disabled"
+                disabled
+              >
+                동의하고 가입하기
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-
+            
       <footer>
         <div class="container-fluid">
             <div class="row">
@@ -604,9 +638,9 @@
             </div>
         </div>
     </div>
-
+   
     <script>
-
+        
         var input = document.getElementById('search_field');
         var options = {};
         var searchBox = new google.maps.places.Autocomplete(input, options);
@@ -719,7 +753,8 @@
         var _AceCounter = (function () { var G = _AceGID; var _sc = document.createElement('script'); var _sm = document.getElementsByTagName('script')[0]; if (G.o != 0) { var _A = G.val[G.o - 1]; var _G = (_A[0]).substr(0, _A[0].indexOf('.')); var _C = (_A[7] != '0') ? (_A[2]) : _A[3]; var _U = (_A[5]).replace(/\,/g, '_'); _sc.src = 'https:' + '//cr.acecounter.com/Web/AceCounter_' + _C + '.js?gc=' + _A[2] + '&py=' + _A[4] + '&gd=' + _G + '&gp=' + _A[1] + '&up=' + _U + '&rd=' + (new Date().getTime()); _sm.parentNode.insertBefore(_sc, _sm); return _sc.src; } })();
     </script>
     <!-- AceCounter Log Gathering Script End -->
-
+    <script src="/assets/js/signup.js"></script>
+    <script src="/assets/js/signup2.js"></script>
 </body>
 
 </html>
