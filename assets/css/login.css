@@ -1,0 +1,204 @@
+
+.login-contents {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 43px 0 50px;
+  }
+
+  .login-contents > h2 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .login-form-wrapper {
+    padding-top: 18px;
+    border-top: 4px solid #000000;
+  }
+
+  .form-input-userinfo-wrapper {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .form-input-userinfo {
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    outline: none;
+  }
+
+  .form-user-btn {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 100%;
+    height: 56px;
+    margin: 20px 0 0;
+    background: #000000;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 600;
+  }
+
+  .sns-login-wrapper {
+    margin: 35px 0;
+  }
+  .sns-login-text {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.3;
+    color: #000000;
+  }
+
+  .sns-login-icon-wrapper {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .sns-login-icon {
+    margin-right: 16px;
+  }
+
+  .sns-login-icon-kakao {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 25px;
+    width: 114px;
+    height: 44px;
+    border-radius: 100px;
+    background: #ffde00;
+  }
+
+  .sns-login-icon-kakao-text {
+    margin-left: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .sns-login-three-second-wrapper {
+    opacity: 1;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .sns-login-three-second-text {
+    z-index: 1;
+    position: absolute;
+    padding: 5px 11px;
+    border: 1px solid #ff4800;
+    border-radius: 2px;
+    background: #ff4800;
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 14px;
+    white-space: nowrap;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sns-login-icon-naver {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: #2db400;
+  }
+
+  .sns-login-icon-facebook {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: #3c5a99;
+  }
+
+  .sns-login-icon-apple {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background: black;
+  }
+  .coupon-text {
+    padding: 40px 0 14px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+  }
+  .coupon-text > a {
+    text-decoration: underline;
+    color: #ff4800;
+  }
+
+  .signup-btn {
+    display: block;
+    height: 56px;
+    border: 1px solid #5d5d5d;
+    border-radius: 28px;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 56px;
+  }
+
+  .login-bottom-menu {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 20px -20px 0;
+    padding: 20px 0;
+  }
+
+  .login-bottom-menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+  }
+
+  .login-bottom-menu-item > a {
+    position: relative;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 10px;
+    color: #5d5d5d;
+  }
