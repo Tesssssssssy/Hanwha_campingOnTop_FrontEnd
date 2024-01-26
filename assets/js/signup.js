@@ -1,3 +1,4 @@
+//회원가입 및 동의 절차 관련
 function next2() {
     console.log("test");
 
