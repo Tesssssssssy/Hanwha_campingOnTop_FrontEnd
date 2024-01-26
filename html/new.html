@@ -233,7 +233,7 @@
         <li class="nav-item">
           <div class="header_right my-auto">
             <div class="login">
-              <a href="login.html" class="btn" id="btn_login">
+              <a href="#" class="btn" id="btn_login">
                 <img src="/assets/images/header/user-solid.svg" alt="로그인" width="26" />
                 로그인 </a>
             </div>
@@ -253,211 +253,37 @@
 
 
 
-      <section id="search">
-        <form name="frmSearch" method="get" action="/s/" id="frmSearchMain">
-          <input type="hidden" name="ks" value="1" />
-          <div class="search_box wh_shadow">
-            <div class="sc search_keyword ln">
-              <input type="text" placeholder="숙소 번호/이름, 장소 검색" value="" class="search_input text2" name="query"
-                autocomplete="off" id="search_field" />
-            </div>
-
-            <div class="sc search_checkin ln">
-              <input type="text" name="checkin" class="text2 date" id="checkin" value="" placeholder="체크인"
-                autocomplete="false" />
-            </div>
-
-            <div class="sc search_checkout ln">
-              <input type="text" name="checkout" class="text2 date" id="checkout" value="" placeholder="체크아웃"
-                autocomplete="false" />
-            </div>
-
-            <div class="sc search_guests">
-              <div class="selectbox search_guests_box" id="search_guest">
-                <input type="hidden" name="num_guests" class="selectbox_input" />
-                <select class="custom-select" name="guests">
-                  <option selected disabled value="">인원</option>
-                  <option value="1">1 명</option>
-                  <option value="2">2 명</option>
-                  <option value="3">3 명</option>
-                  <option value="4">4 명</option>
-                  <option value="5">5 명</option>
-                  <option value="6">6 명</option>
-                  <option value="7">7 명</option>
-                  <option value="8">8 명</option>
-                  <option value="9">9 명</option>
-                  <option value="10">10 명</option>
-                  <option value="11">11 명</option>
-                  <option value="12">12 명</option>
-                  <option value="13">13 명</option>
-                  <option value="14">14 명</option>
-                  <option value="15">15 명</option>
-                  <option value="16">16+명</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="sc search_btn">
-
-              <button class="btn rounded-circle" id="search_btn" type="submit">
-                <img src="/assets/images/header/magnifying-glass-solid.svg" alt="S" width="12" />
-              </button>
-            </div>
-          </div>
-        </form>
-        <div id="wh_fav_area" class="wh_shadow">
-          <h6>서울 인기지역</h6>
-          <div class="row no-gutters">
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                홍대 </a>
-            </div>
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                이태원 </a>
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                명동 </a>
-            </div>
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                을지로 </a>
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                강남 </a>
-            </div>
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                잠실 </a>
-            </div>
-          </div>
-          <br />
-          <h6>부산 인기지역</h6>
-          <div class="row no-gutters">
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                해운대 </a>
-            </div>
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                광안리 </a>
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                서면 </a>
-            </div>
-            <div class="area col-6">
-              <a href="#">
-                <img src="/assets/images/header/location-dot-solid.svg" alt="" width="12" />
-                영도구 </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
+      
   </header>
-
-
   <main>
-    <section id="category">
-      <div class="swiper-container category_slide">
-        <ul class="swiper-wrapper">
-          <li class="swiper-slide" data-type="subway"
-            onclick="window.dataLayer.push({event: 'click_home',click_target: 'subway'});">
-            <img src="/assets/images/home/train-subway-solid.svg" width="25" />
-            <h6>역세권</h6>
-          </li>
-          <li class="swiper-slide" data-type="subway"
-            onclick="window.dataLayer.push({event: 'click_home',click_target: 'subway'});">
-            <img src="/assets/images/header/location-dot-solid.svg" width="21" />
-            <h6>내 주변</h6>
-          </li>
-          <li class="swiper-slide" data-type="budget"
-            onclick="window.dataLayer.push({event: 'click_home',click_target: 'budget'});">
-            <img src="/assets/images/home/arrow-down-short-wide-solid.svg" width="32" />
-            <h6>낮은 가격순</h6>
-          </li>
-          <li class="swiper-slide" data-type="premium"
-            onclick="window.dataLayer.push({event: 'click_home',click_target: 'premium'});">
-            <img src="/assets/images/home/arrow-up-wide-short-solid.svg" width="32" />
-            <h6>높은 가격순</h6>
-          </li>
-          <li class="swiper-slide" data-type="bbq"
-            onclick="window.dataLayer.push({event: 'click_home',click_target: 'bbq'});">
-            <img src="/assets/images/home/fire-solid.svg" width="24" />
-            <h6>바베큐</h6>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="main_lists" class="container">
-      <div class="row">
-        <div class="col-xl-3 col-md-4 col-sm-6 col-12 card_wrap">
-          <div class="card" data-pid="2009031">
-            <div class="p_images swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
-                  <div class="swiper-lazy-preloader"></div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
-                  <div class="swiper-lazy-preloader"></div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
-                  <div class="swiper-lazy-preloader"></div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt="<" /></div>
-              <div class="swiper-button-next2"><img src="/assets/images/header/chevron-right-solid.svg" alt=">" /></div>
-
-              <span class="btn_fav" data-id="2009031">
-                <img src="/assets/images/header/heart-regular.svg" alt="Like" class="heart" width="17" />
-                <img src="/assets/images/header/heart-solid.svg" alt="Like" class="heart_on d-none" width="17" />
-              </span>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title text-truncate">
-                <a href="#">서울 낙산공원 독채 Stay chill. House</a>
-              </h5>
-              <h6 class="card-subtitle">개인주택 &bull; 집/아파트 전체</h6>
-              <h6 class="card-subtitle">서울시 종로구</h6>
-              <div class="p_price">
-                <span class="price">150,000원</span>
-                <span class="night">/1박당</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
+    sdfgdgfhfdgjdfjfjfgjfg
   </main>
+
+
   <nav>
     <div class="container">
       <div class="row">
