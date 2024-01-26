@@ -1,0 +1,48 @@
+
+footer {
+    padding-top: 50px ;
+    font-size: 0.8rem;
+    margin-bottom: 120px;
+  }
+  footer dt {
+    margin-bottom: 5px;
+  }
+  footer a {
+    color: #000;
+  }
+  footer .copyright {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+  footer .sns_link img {
+    padding-bottom: 10px;
+  }
+  footer .app_link img {
+    width: 130px;
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  /*  Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    footer {
+      font-size: 1rem;
+    }
+    footer .sns_link img {
+      width: 48px;
+    }
+  
+  
+    
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+   
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+  }
+  
