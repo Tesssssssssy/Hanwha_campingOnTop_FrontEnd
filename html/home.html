@@ -189,14 +189,21 @@
         <li class="nav-item">
           <div class="header_right my-auto" id="sub_mymenu" style="display: none;">
             <div class="login">
-              <a href="#" class="btn" id="btn_logout">
-                <img src="/assets/images/header/user-solid.svg" alt="로그아웃" width="21" />
-                <span id="user_nickname"></span>
-                님
-              </a>
+              <div class="dropdown">
+                <a href="home.html" class="btn dropdown-toggle" id="btn_logout" data-toggle="dropdown"
+                  aria-haspopup="true">
+                  <img src="/assets/images/header/user-solid.svg" alt="로그아웃" width="21" />
+                  <span id="user_nickname"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="btn_logout">
+                  <a class="dropdown-item" href="mypage.html">마이페이지</a>
+                  <a class="dropdown-item" href="home.html" onclick="logout()">로그아웃</a>
+                </div>
+              </div>
             </div>
           </div>
         </li>
+
         <li class="nav-item">
           <a href="#" class="nav-link wehomehost_btn btn">호스트되기</a>
         </li>
@@ -686,10 +693,14 @@
       return JSON.parse(jsonPayload);
     }
 
+    function logout() {
+      window.localStorage.removeItem('token');
+      toggleMenu();
+    }
+
     // 페이지 로드 시 함수 실행
     window.onload = toggleMenu;
   </script>
-
 
   <script type="text/javascript">
     var userLogged = false;
