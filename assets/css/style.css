@@ -1228,7 +1228,7 @@ section.message ul.list li div.type div.type_txt{background-color:#ccc; text-ali
 section.message ul.list li div.type div.type_txt a{color:#202020;}
 section.message ul.list li div.type div.price{font-size:16px; font-weight:bold; text-align:center;}
 
-section.adv div.box{border:1px solid #ccc; border-radius:5px; background-color:#fff; padding:30px; 40px; overflow:hidden;}
+section.adv div.box{border:1px solid #ccc; border-radius:5px; background-color:#fff; padding:30px;  overflow:hidden;}
 section.adv div.box span.icon_map{margin-top:10px;}
 section.adv div.box dl{margin-left:16px; float:left;}
 section.adv div.box dl dt{font-size:20px;}
