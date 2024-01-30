@@ -1,4 +1,4 @@
-const backend = "http://localhost:8080/api/v1";
+const backend = "http://localhost:8080";
 
 const getHouseList = async (page, size) => {
   let response = await axios.get(
@@ -7,6 +7,8 @@ const getHouseList = async (page, size) => {
 
   return response.data;
 };
+
+
 
 const createHouse = async (data) => {
   let formData = new FormData();
