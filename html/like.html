@@ -15,7 +15,7 @@
     gtag('config', 'G-P9VCQZ4R4N');
   </script>
 
-  <title>캠핑온탑</title>
+  <title>like</title>
   <meta name="Description" content="캠핑온탑은 대한민국 1등 옥탑 공유숙박입니다. 모든 숙소가 합법적으로 등록된 안전한 숙소입니다. 
         대한민국에서 내 취향에 맞는 특별난 숙소를 선택해서 안전하고 경제적으로 머물 수 있습니다. 
         단기 숙박에서 워케이션, 한달살기 및 장기 숙박까지 편리하게 머무실 수 있습니다." />
@@ -66,8 +66,8 @@
   </script>
 
   <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/like.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -255,87 +255,76 @@
 
       
   </header>
-  <main>
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-  </main>
+ 
+
+   <main id="main">
+        <section class="like">
+            <div class="like__information">
+                <h1>좋아요</h1>
+        
+            </div>
+            <table class="like__list">
+                <!-- 테이블 내용(동적으로 추가될 부분) -->
+                <tbody id="likeTableBody">
+                  <!-- 여기에 동적으로 생성될 내용이 들어갈 예정 -->
+                  <!-- 정적으로 하나의 상품 추가 -->
+                  <tr>
+                    <td>
+                      <!-- 이미지 경로를 src로 설정 -->
+                      <img src="/assets/images/like/common.jpg" alt="Product 1">
+                    </td>
+                    <td>호텔</td>
+                    <td>여름 호텔</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="/assets/images/like/common.jpg" alt="Product 2">
+                    </td>
+                    <td>상품2</td>
+                    <td>설명2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="/assets/images/like/common.jpg" alt="Product 3">
+                    </td>
+                    <td>상품3</td>
+                    <td>설명3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="/assets/images/like/common.jpg" alt="Product 4">
+                    </td>
+                    <td>상품4</td>
+                    <td>설명4</td>
+                  </tr>
+                </tbody>
+                <!-- 테이블 푸터 -->
+                <tfoot>
+                  <tr>
+                    <td colspan="3"><h2 id="tfoot_message"></h2></td>
+                    <!-- 예악된 상품이 없습니다. 좋아요 상품이 등록되면 동적으로 메시지가 사라지게 구현. -->
+                  </tr>
+                </tfoot>
+              </table>
+            <div class="n-paging n-btn-group">
+                <div class="btn-left" id="default_btn">
+                    <a href="#" class="n-btn btn-sm btn-default">내폴더</a>
+                                            <button tyle="button" class="n-btn btn-sm btn-default" onclick="edit_list();">편집</button>
+                                    </div>
+
+                <div class="btn-left" id="edit_btn" style="display:none">
+                    <span class="n-btn btn-sm btn-default disabled disabled_btn" style="display:none">이동</span>
+                    <a href="#myMove" class="n-btn btn-sm btn-default active_btn" data-type="basic" onclick="move_goods();" style="display:none">이동</a>
+                    <span class="n-btn btn-sm btn-default disabled disabled_btn" style="display:none">삭제</span>
+                    <button tyle="button" class="n-btn btn-sm btn-default active_btn" onclick="delete_goods();" style="display:none">삭제</button>
+                    <button tyle="button" class="n-btn btn-sm btn-default" onclick="cancel_edit();">취소</button>
+          </section>
+      </main>
+    
+ 
 
 
-  <nav>
-    <div class="container">
-      <div class="row">
-        <a href="#" class="col on">
-          <div class="button_wrap">
-            <img src="/assets/images/home/nav/campground-solid.svg" alt="Home" class="over" width="100%" />
-          </div>
-          <h2>캠핑온탑</h2>
-        </a>
-        <a href="#" class="col">
-          <div class="button_wrap">
-            <img src="/assets/images/home/nav/btn_book.png" alt="Booking" class="off" width="100%" />
-            <img src="/assets/images/home/nav/btn_book_h.png" alt="Booking" class="over" width="100%" />
-          </div>
-          <h2>예약</h2>
-        </a>
-        <a href="#" class="col">
-          <div class="button_wrap">
-            <img src="/assets/images/home/nav/btn_msg.png" alt="Message" class="off" width="100%" />
-            <img src="/assets/images/home/nav/btn_msg_h.png" alt="Message" class="over" width="100%" />
-          </div>
-          <h2>메시지</h2>
-        </a>
-        <a href="#" class="col">
-          <div class="button_wrap">
-            <img src="/assets/images/home/nav/btn_profile.png" alt="Profile" class="off" width="100%" />
-            <img src="/assets/images/home/nav/btn_profile_h.png" alt="Profile" class="over" width="100%" />
-          </div>
-          <h2>
-            로그인
-          </h2>
-        </a>
-      </div>
-    </div>
-  </nav>
 
-  <!-- PC TOP 버튼 HTML -->
-  <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
-    <img src="/assets/images/home/btn_up_light.png">
-  </div>
-  <!-- 모바일 TOP 버튼 HTML -->
-  <div onclick="topFunctionMob()" id="scrollTopMob" class="hidden-lg">
-    <img src="/assets/images/home/btn_up_light.png">
-  </div>
-  <!-- PC DOWN 버튼 HTML -->
-  <div onclick="downFunction()" id="scrollDownPc" class="hidden-md hidden-sm hidden-xs">
-    <img src="/assets/images/home/btn_down_light.png">
-  </div>
-  <!-- 모바일 DOWN 버튼 HTML -->
-  <div onclick="downFunctionMob()" id="scrollDownMob" class="hidden-lg">
-    <img src="/assets/images/home/btn_down_light.png">
-  </div>
 
   <footer>
     <div class="container-fluid">
@@ -425,6 +414,26 @@
         &copy;2020 - 2024 wehome. All rights reserved </p>
     </div>
   </footer>
+
+
+  <!-- PC TOP 버튼 HTML -->
+  <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
+    <img src="/assets/images/home/btn_up_light.png">
+  </div>
+  <!-- 모바일 TOP 버튼 HTML -->
+  <div onclick="topFunctionMob()" id="scrollTopMob" class="hidden-lg">
+    <img src="/assets/images/home/btn_up_light.png">
+  </div>
+  <!-- PC DOWN 버튼 HTML -->
+  <div onclick="downFunction()" id="scrollDownPc" class="hidden-md hidden-sm hidden-xs">
+    <img src="/assets/images/home/btn_down_light.png">
+  </div>
+  <!-- 모바일 DOWN 버튼 HTML -->
+  <div onclick="downFunctionMob()" id="scrollDownMob" class="hidden-lg">
+    <img src="/assets/images/home/btn_down_light.png">
+  </div>
+
+
 
   <div class="modal fade" id="loading">
     <div class="modal-dialog modal-dialog-centered">
@@ -577,6 +586,7 @@
       $('html, body').animate({ scrollTop: $('body').height() }, 500);
     }
   </script>
+      <script src="/assets/js/like.js"></script>
 </body>
 
 </html>
