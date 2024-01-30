@@ -286,7 +286,12 @@ footer {
       transform: translateX(0%);
     }
   }
-  
+  @media only screen and (max-height: 500px) {
+    .signup-contents-wrapper {
+        max-height: 700px; /* 높이를 제한 */
+        overflow-y: auto;  /* 세로 스크롤을 활성화 */
+    }
+}
 .label {
 margin-bottom: 10px;
 }

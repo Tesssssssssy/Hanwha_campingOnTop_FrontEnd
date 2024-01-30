@@ -1,4 +1,4 @@
-@import url('https://webfontworld.github.io/goodchoice/Jalnan.css');
+@charset "utf-8";
 
 @font-face {
   font-family: 'yg-jalnan';
@@ -6,11 +6,12 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@charset "utf-8";
-
+html {
+  font-family: 'yg-jalnan';
+}
 :root {
   --wehome-color: #6800cd;
+  
 }
 
 /* initial */
@@ -32,7 +33,7 @@ ul{list-style:none;}
 
 img{vertical-align:middle; /* for IE image margin */}
 html{text-align:center; height:100%; -webkit-text-size-adjust:none;}
-body{font-family: 'yg-jalnan';
+body{font-family:"yg-jalnan", "Nanum Gothic";
  font-size:12px; color:#202020; text-align:left; background-color:#f6f6f6;}
 img.loading{display:none;}
 div#loading{position:relative;background:#fff;padding:20px;width: auto;max-width:500px;margin:20px auto; font-size:14px; font-weight:bold;}
@@ -472,7 +473,7 @@ div.signup ul.btns li{margin:5px 0;}
 div.sub_title{font-size:20px;}
 
 /* Calendar */
-.ui-widget{font-family:'yg-jalnan';}
+.ui-widget{font-family:"Arial", "Nanum Gothic", 'Malgun Gothic', '맑은 고딕', "Dotum", "UnDotum", "Helvetica Neue", "sans-serif";}
 .ui-widget-content{border:0; background:#f6f6f6; border-radius:5px; font-size:14px; color:#13405a; padding:15px 30px;}
 .ui-widget-header{background:transparent; border:0; color:#13405a; font-size:14px;}
 table.ui-datepicker-calendar{background-color:#fff;}
@@ -627,20 +628,20 @@ nav.lnb a.back{background-color:#fff; border:1px solid #ccc; color:#0082d0; font
  margin-right:20px;}
 nav.lnb ul{display:inline;}
 nav.lnb li{display:inline;}
-nav.lnb li.s{background:url(/image/cmn/lnb_arrow.gif) 5px center no-repeat; padding-left:15px;}
+nav.lnb li.s{background:url(/assets/image/cmn/lnb_arrow.gif) 5px center no-repeat; padding-left:15px;}
 nav.lnb li a{font-size:12px; color:#606060;}
-a.btn_review{background:url(/image/cmn/icon_write.gif) 10px center no-repeat #fff; border:1px solid #ccc; 
+a.btn_review{background:url(/assets/image/cmn/icon_write.gif) 10px center no-repeat #fff; border:1px solid #ccc; 
  color:#0082d0; font-size:14px; padding:10px; border-radius:5px; text-indent:20px; position:absolute; top:0; right:0;}
 main.details{overflow:hidden; margin-bottom:50px; position:relative;} 
 main.details div.content{clear:both;}
 main.details section div.title{position:relative; margin-top:20px;} 
 main.details section h1{font-size:32px; color:#202020; margin:10px 0;}
-main.details div.main_content{width:800px; border-bottom:1px solid #ccc; border-radius:5px;}
+main.details div.main_content{width:1150px; border-bottom:1px solid #ccc; border-radius:5px;}
 div.left{float:left;}
 div.right{float:right;}
 div.tabmenu_canvas{background-color:#F6F6F6; width:800px; height:50px;}
 ul.tabmenu.fixed{position:fixed; top:0; z-index:100; border-radius:0;}
-ul.tabmenu{height:48px; border:1px solid #ccc; border-top-left-radius:5px; border-top-right-radius:5px; clear:both; background-color:#fff; width:798px;}
+ul.tabmenu{height:48px; border:1px solid #ccc; border-top-left-radius:5px; border-top-right-radius:5px; clear:both; background-color:#fff; width:1000px;}
 ul.tabmenu li{float:left; width:20%;}
 ul.tabmenu li a{border-left:1px solid #ccc; font-size:16px; color:#202020; display:block; text-align:center; height:48px; line-height:48px; font-weight:bold;}
 ul.tabmenu li.sel a{background-color:#ffdc70;}
@@ -754,6 +755,25 @@ section#conditions ul li span.price{width:80px; text-align:right;}
 section#conditions ul li span.def{font-weight:bold;}
 section#conditions ul li span.red{color:#ff3366;}
 section#conditions ul li span.policy{cursor:pointer; text-decoration:underline;}
+
+.cart_right {
+  float: right;
+  padding: 13px; /* 패딩을 늘려서 크기를 키웁니다 */
+  cursor: pointer;
+  background-color: rgb(209, 62, 62);
+  color: #f2f0f5;
+  border-radius: 10px; /* 테두리를 둥글게 합니다 */
+  text-align: center; /* 글자를 가운데 정렬합니다 */
+  font-weight: bold; /* 글씨를 두껍게 만듭니다 */
+  font-size: 27px; /* 글씨 크기를 키웁니다 */
+  line-height: 1.1; /* 수직 정렬을 위해 라인 높이를 조정합니다 */
+  /* width와 height를 설정하여 크기를 조정할 수 있습니다. 필요에 따라 조절하세요 */
+  width: 140px;
+  height: 30px;
+  margin: 20px;
+  
+}
+
 
 div.up_border2{border-top:1px solid #dcdcdc;}
 

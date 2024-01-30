@@ -461,7 +461,7 @@
                   ></span
                 >
               </div>
-              <ul class="agreement-wrapper">
+              <div class="agreement-wrapper">
                 <div class="agreement-item-wrapper">
                   <span onclick="agree(this)" type="join" class="agreement-span"
                     ><input
@@ -527,18 +527,19 @@
                     ></span
                   >
                 </div>
-              </ul>
-              <button
-                onclick="next()"
-                class="signup-progress-btn disabled"
-                disabled
-              >
-                동의하고 가입하기
-              </button>
-            </div>
+                
+                <div class="agreement-item-wrapper">    
+                    <button
+                    onclick="next()"
+                    class="signup-progress-btn disabled"
+                    disabled
+                    >
+                    동의하고 가입하기
+                    </button>
+                </div>
           </div>
         </div>
-      </div>
+    </div>
     <!-- PC TOP 버튼 HTML -->
         <div onclick="topFunction()" id="scrollTopPc" class="hidden-md hidden-sm hidden-xs">
             <img src="/assets/images/home/btn_up_light.png">
