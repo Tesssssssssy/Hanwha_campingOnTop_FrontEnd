@@ -21,7 +21,7 @@ a {
 .cart {
   width: 120%;
   margin: auto;
-  padding: 50px;
+  padding: 5px;
 }
 
 .cart ul {
@@ -125,6 +125,29 @@ td {
   margin-top: 5px;
 }
 
+
+
+.cart__list th, .cart__list td {
+  text-align: center;
+  vertical-align: middle;
+}
+.cart__list td:nth-child(3) {
+  width: 150px;
+}
+.cart__list td:nth-child(5),
+.cart__list td:nth-child(6) {
+  width: 120px; 
+}
+.cart__list img {
+  max-width: 100px;
+  height: auto; 
+  margin: 0 auto; 
+}
+.cart__list__optionbtn {
+  display: block; 
+  text-align: left; 
+  margin-left: 75px;
+}
 .price {
   font-weight: bold;
 }
@@ -143,6 +166,7 @@ td {
   font-size: 16px;
   margin: auto;
   border-radius: 5px;
+  display: block;
 }
 
 .cart__bigorderbtn.left {

@@ -259,6 +259,7 @@
   <main id="main">
     <section class="cart">
         <div class="cart__information">
+            <h1>장바구니</h1>
           <ul>
            
             <li>장바구니 상품은 최대 30일간 저장됩니다.</li>
@@ -274,31 +275,95 @@
               <td colspan="2">상품 정보</td>
               <td>옵션</td>
               <td>상품 금액</td>
-              <td>예약 날짜</td>
+              <td>체크인</td>
+              <td>체크아웃</td>
             </tr>
           </thead>
           <!-- 테이블 내용(동적으로 추가될 부분) -->
           <tbody id="cartTableBody">
-            <!-- 여기에 동적으로 생성될 내용이 들어갈 예정 -->
-            
+            <!-- 동적으로 생성될 내용 -->
+          
+            <!-- 정적으로 추가된 상품 1 -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td colspan="2">
+                <img src="/assets/images/like/common.jpg" alt="Product 1" style="width: 50px;">
+                상품 1
+              </td>
+              <td>옵션 1</td>
+              <td>10,000원</td>
+              <td>2024-02-01</td>
+              <td>2024-02-02</td>
+            </tr>
+          
+            <!-- 정적으로 추가된 상품 2 -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td colspan="2">
+                <img src="/assets/images/like/common.jpg" alt="Product 2" style="width: 50px;">
+                상품 2
+              </td>
+              <td>옵션 2</td>
+              <td>15,000원</td>
+              <td>2024-02-05</td>
+              <td>2024-02-06</td>
+            </tr>
+          
+            <!-- 정적으로 추가된 상품 3 -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td colspan="2">
+                <img src="/assets/images/like/common.jpg" alt="Product 3" style="width: 50px;">
+                상품 3
+              </td>
+              <td>옵션 3</td>
+              <td>20,000원</td>
+              <td>2024-02-10</td>
+              <td>2024-02-11</td>
+            </tr>
+          
+            <!-- 정적으로 추가된 상품 4 -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td colspan="2">
+                <img src="/assets/images/like/common.jpg" alt="Product 4" style="width: 50px;">
+                상품 4
+              </td>
+              <td>옵션 4</td>
+              <td>25,000원</td>
+              <td>2024-02-15</td>
+              <td>2024-02-16</td>
+            </tr>
+          
+            <!-- 정적으로 추가된 상품 5 -->
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td colspan="2">
+                <img src="/assets/images/like/common.jpg" alt="Product 5" style="width: 50px;">
+                상품 5
+              </td>
+              <td>옵션 5</td>
+              <td>30,000원</td>
+              <td>2024-02-20</td>
+              <td>2024-02-21</td>
+            </tr>
+          
           </tbody>
           <!-- 테이블 푸터 -->
           <tfoot>
             <tr>
               <td colspan="3">
-                <input type="checkbox" />
                 <button class="cart__list__optionbtn">선택상품 삭제</button>
-                <button class="cart__list__optionbtn">선택상품 좋아요</button>
               </td>
-              <td><h2 id="tfoot_message">예약된 상품이 없습니다.</h2></td>
+              <td><h2 id="tfoot_message"></h2></td>
+              <!-- 예악된 상품이 없습니다. 장바구니 상품이 등록되면 동적으로 메시지가 사라지게 구현. -->
               <td></td>
               <td></td>
             </tr>
           </tfoot>
         </table>
         <div class="cart__mainbtns">
-          <button class="cart__bigorderbtn left">예약 하러가기</button>
-          <button class="cart__bigorderbtn right">예약하기</button>
+          <button class="cart__bigorderbtn right">결제하기</button>
         </div>
       </section>
 
