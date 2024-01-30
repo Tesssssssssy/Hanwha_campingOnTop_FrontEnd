@@ -19,7 +19,7 @@ const login = async () => {
       console.log("token:", token);
 
       window.localStorage.setItem("token", token);
-      console.log(window.localStorage.getItem(token));
+      console.log(window.localStorage.getItem('token'));
 
       window.location.href = "/html/home.html";
     } else {
