@@ -1822,4 +1822,74 @@ dd.highlight{color:#ed1c24;}
 
 /* hanok map */
 main.hanokmap section.mapcont{width:100%; position:fixed; bottom:0px; top:50px; left:0;}
- 
+
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div.show_more a {
+  text-align: center;
+  font-size: 16px;
+  color: #0082d0;
+}
+div.show_more a span.glyphicon {
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.glyphicon:empty {
+  width: 1em;
+}
+
+#scrollTopPc {
+  display: none;
+  position: fixed;
+  bottom: 64px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+  right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+  cursor: pointer;
+  z-index: 99;
+}
+
+/* 모바일 TOP 버튼 */
+#scrollTopMob {
+  display: none;
+  position: fixed;
+  bottom: 64px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+  right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+  z-index: 99;
+}
+
+/* PC DOWN 버튼 */
+#scrollDownPc {
+  position: fixed;
+  bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+  right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+  cursor: pointer;
+  z-index: 99;
+}
+
+/* 모바일 DOWN 버튼 */
+#scrollDownMob {
+  position: fixed;
+  bottom: 20px; /* 브라우저 아래쪽 끝에서부터의 거리 */
+  right: 15px; /* 브라우저 오른쪽 끝에서부터의 거리 */
+  z-index: 99;
+}
