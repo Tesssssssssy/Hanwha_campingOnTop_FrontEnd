@@ -6,38 +6,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-P9VCQZ4R4N');
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <title>캠핑온탑</title>
-  <meta name="Description" content="캠핑온탑은 대한민국 1등 옥탑 공유숙박입니다. 모든 숙소가 합법적으로 등록된 안전한 숙소입니다. 
-        대한민국에서 내 취향에 맞는 특별난 숙소를 선택해서 안전하고 경제적으로 머물 수 있습니다. 
-        단기 숙박에서 워케이션, 한달살기 및 장기 숙박까지 편리하게 머무실 수 있습니다." />
-  <meta name="KEYWORDS" content="캠핑온탑, 공유숙박, 숙박공유, 공유경제, 숙박예약, 
-        도시민박, 외국인관광도시민박, 한옥,코로나,
-        오피스텔,자가격리, 에어비앤비, 내국인숙박, airbnb, 합법, 안전,취향,구글공유숙박, 
-        외국인도시민박업, 도시민박업 ,워케이션,장기숙박, 리빙스테이, 
-        케어스테이, 서울워케이션, 서울호텔, K-Stay, Livingstay, Carestay" />
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <meta property="og:site_name" content="Wehome" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="캠핑온탑은 대한민국 1등 옥탑 공유숙박입니다. 단기 숙박에서 워케이션, 한달살기 및 장기 숙박까지 편리하게 머무실 수 있습니다." />
-
-  <meta property="og:locale" content="ko" />
-
-  <meta property="og:locale:alternate" content="en" />
-  <meta property="og:locale:alternate" content="ko" />
-  <link rel="alternate" href="https://www.wehome.me/en" hreflang="en" />
-  <link rel="alternate" href="https://www.wehome.me/ko" hreflang="ko" />
-  <meta property="og:url" content="https://www.wehome.me/" />
-  <meta property="og:image" content="https://d1ff1mcd5ly5rr.cloudfront.net/image/main.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
@@ -48,22 +19,7 @@
   <script src="/assets/js/datepicker-ko.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script><!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1353467688879420');
-    fbq('track', 'PageView');
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
@@ -415,20 +371,12 @@
 
     <section id="main_lists" class="container">
       <div class="row">
-        <div class="col-xl-3 col-md-4 col-sm-6 col-12 card_wrap">
-          <div class="card" data-pid="2009031">
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 card_wrap" v-for="house in houseList" :key="house.id">
+          <div class="card" :data-pid="house.id">
             <div class="p_images swiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
-                  <div class="swiper-lazy-preloader"></div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
-                  <div class="swiper-lazy-preloader"></div>
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
+                <div class="swiper-slide" v-for="(image, index) in house.filenames" :key="index">
+                  <img :src="image" alt="" loading="lazy" width="100%" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="swiper-slide">
@@ -444,29 +392,28 @@
               <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt=">" /></div>
               <div class="swiper-button-next2"><img src="/assets/images/header/chevron-right-solid.svg" alt=">" /></div>
 
-              <span class="btn_fav" data-id="2009031">
+              <span class="btn_fav" :data-id="house.id">
                 <img src="/assets/images/header/heart-regular.svg" alt="Like" class="heart" width="17" />
                 <img src="/assets/images/header/heart-solid.svg" alt="Like" class="heart_on d-none" width="17" />
               </span>
             </div>
-
             <div class="card-body">
               <h5 class="card-title text-truncate">
-                <a href="#">서울 낙산공원 독채 Stay chill. House</a>
+                <a :href="'#'+house.id">{{ house.name }}</a>
               </h5>
-              <h6 class="card-subtitle">개인주택 &bull; 집/아파트 전체</h6>
-              <h6 class="card-subtitle">서울시 종로구</h6>
+              <h6 class="card-subtitle">{{ house.address }}</h6>
               <div class="p_price">
-                <span class="price">150,000원</span>
+                <span class="price">{{ house.price }}원</span>
                 <span class="night">/1박당</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
+
   </main>
+
   <nav>
     <div class="container">
       <div class="row">
@@ -619,7 +566,97 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="/assets/js/home.js"></script>
   <script>
+    const initializeSwiper = () => {
+      var main_swiper = new Swiper(".p_images", main_slide_option);
+    };
+
+    const doGetHouseList = async (page, size) => {
+      try {
+        let houseList = await getHouseList(page, size);
+        console.log(houseList);
+
+        var vm = Vue.createApp({
+          data() {
+            return {
+              houseList: houseList,
+            };
+          },
+          mounted() {
+            // Call initializeSwiper after Vue has mounted
+            initializeSwiper();
+          },
+        }).mount("#main_lists");
+      } catch (error) {
+        console.error("Error rendering house list:", error);
+      }
+    };
+    doGetHouseList(1, 36);
+  </script>
+
+  <script>
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    var category_slide = new Swiper('.category_slide', {
+      freeMode: true,
+      slidesPerView: 'auto',
+      mousewheel: true,
+    });
+
+    var main_swiper = new Swiper(".p_images", main_slide_option);
+
+
+    var banner_slide = new Swiper('.banner_swipe', {
+      autoplay: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16
+        },
+      }
+    });
+  </script>
+  <script>
+    // 문서가 준비되면 실행
+    document.addEventListener('DOMContentLoaded', function () {
+      // 'p_images' 클래스를 가진 모든 슬라이더를 찾아 각각 초기화
+      var allImageSliders = document.querySelectorAll('.p_images');
+      allImageSliders.forEach(function (sliderElement) {
+        var swiper = new Swiper(sliderElement, {
+          // 여기에 원하는 Swiper 옵션 추가
+          loop: true, // 무한 반복 모드
+          pagination: {
+            el: '.swiper-pagination', // 페이지네이션 설정
+            clickable: true, // 클릭 가능한 페이지네이션 버튼
+          },
+          navigation: {
+            nextEl: '.swiper-button-next2', // 다음 버튼 클래스명
+            prevEl: '.swiper-button-prev2', // 이전 버튼 클래스명
+          },
+          lazy: {
+            loadPrevNext: true, // 현재 슬라이드의 이전과 다음 슬라이드를 미리 로드
+          }
+        });
+      });
+    });
+  </script>
+
+
+  <script>
+    /*
     var input = document.getElementById('search_field');
     var options = {};
     var searchBox = new google.maps.places.Autocomplete(input, options);
@@ -689,6 +726,7 @@
       }
 
     });
+    */
   </script>
   <script type="text/javascript">
     var userLogged = false;
