@@ -775,37 +775,37 @@
     });
   </script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // 모든 하트 아이콘에 이벤트 리스너 추가
-    document.querySelectorAll('.btn_fav').forEach(item => {
-        item.addEventListener('click', function(e) {
-            e.preventDefault();
-            // 아이콘 이미지 변경
-            const heartIcon = this.querySelector('.heart');
-            const heartIconOn = this.querySelector('.heart_on');
-            heartIcon.classList.toggle('d-none');
-            heartIconOn.classList.toggle('d-none');
+    document.addEventListener('DOMContentLoaded', function () {
+      // 모든 하트 아이콘에 이벤트 리스너 추가
+      document.querySelectorAll('.btn_fav').forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 아이콘 이미지 변경
+          const heartIcon = this.querySelector('.heart');
+          const heartIconOn = this.querySelector('.heart_on');
+          heartIcon.classList.toggle('d-none');
+          heartIconOn.classList.toggle('d-none');
 
-            // 아이템 ID 가져오기 (예시)
-            const itemId = this.dataset.id;
+          // 아이템 ID 가져오기 (예시)
+          const itemId = this.dataset.id;
 
-            // 서버에 찜 목록 추가 요청 (예시)
-            // 여기서는 서버 요청 부분은 주석 처리하고 있습니다.
-            // 실제 구현에서는 이 부분을 서버와 통신하는 코드로 대체해야 합니다.
-            /*
-            axios.post('/api/add-to-favorites', { id: itemId })
-                .then(response => {
-                    console.log('찜 목록에 추가됨', response.data);
-                    // 추가 로직
-                })
-                .catch(error => {
-                    console.error('에러 발생', error);
-                });
-            */
+          // 서버에 찜 목록 추가 요청 (예시)
+          // 여기서는 서버 요청 부분은 주석 처리하고 있습니다.
+          // 실제 구현에서는 이 부분을 서버와 통신하는 코드로 대체해야 합니다.
+          /*
+          axios.post('/api/add-to-favorites', { id: itemId })
+              .then(response => {
+                  console.log('찜 목록에 추가됨', response.data);
+                  // 추가 로직
+              })
+              .catch(error => {
+                  console.error('에러 발생', error);
+              });
+          */
         });
+      });
     });
-});
-    </script>
+  </script>
 </body>
 
 </html>
