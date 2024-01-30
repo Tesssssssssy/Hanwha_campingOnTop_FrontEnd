@@ -1,0 +1,161 @@
+main {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#product_Registration {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.product_Registration {
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product_Registration label {
+  font-weight: bold;
+  color: #555;
+}
+
+.product_Registration .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product_Registration .input-group .half {
+  width: 48%;
+}
+
+.product_Registration .input-group input[type="text"],
+.product_Registration .input-group input[type="number"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: calc(100% - 30px); 
+    box-sizing: border-box; 
+    margin-bottom: 0; 
+}
+
+.product_Registration input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.product_Registration input[type="submit"] {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.product_Registration input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Custom CSS for checkbox */
+.product_Registration .checkbox-group {
+  display: block;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/* Custom CSS for maxUser */
+.product_Registration #maxUser {
+  width: 50%;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.checkbox div {
+    margin-right: -100px; 
+}
+.checkbox label,
+.checkbox input {
+  display: inline-block;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block; 
+    font-size: 1.8em; 
+    margin-bottom: 0px; 
+}
+
+.input-group,
+.checkbox,
+.btns {
+  margin-left: 0px; 
+}
+
+.input-group label,
+.checkbox label {
+  display: inline-block;
+  width: 200px;
+}
+#next_btn {
+    text-align: center;
+    margin-top: 25px
+}
+
+
+
+
+@charset "utf-8";
+
+:root {
+  --wehome-color: #6800cd;
+}
+
+/* initial */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
+input, p, blockquote, th, td{margin:0; padding:0; color:#202020;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+img, fieldset {border:0;}
+table {border-collapse:collapse; border-spacing:0; border:0;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+
+/* page default style */
+a, a:link, a:visited, a:active{text-decoration:none; color: black;}
+a:hover{text-decoration:none;}
+
+
+main.admin ul.table li span.cell{padding:10px 0; font-size:20px;}
+
+main.newadd{margin-bottom:100px;}
+main.newadd h1{font-size:48px; text-align:center; margin-top:100px;}
+main.newadd h2{font-size:24px; font-weight:normal; margin-bottom:10px; display: block;}
+main.newadd ul.type{overflow:hidden; margin-bottom:30px; margin-top: 50px;}
+main.newadd ul.type li{float:left;}
+main.newadd ul.type li.title{font-size:24px; width:220px; line-height:51px;}
+main.newadd ul.type li.type{margin-right:20px;}
+main.newadd ul.type li.type a{text-align:center; display:block; font-size:18px; color:#202020; padding:5px 10px;}
+main.newadd ul.type li.type a.sel{background-color:#d9d7d7;}
+main.newadd ul.circle li.type a{border:2px solid #999; color:#999; border-radius:50%; font-size:30px; width:50px; height:50px; line-height:50px; padding:0;}
+main.newadd ul.type li div.selectbox_arr{margin-top:5px;}
+main.newadd div.btns{text-align:center;}
+main.newadd div.btns a.btn{padding:0 100px;}
+
+
+
