@@ -410,11 +410,11 @@ section.certi dl dd a{color:#0082d0; margin-top:20px; display:block;}
 footer{border-top:1px solid #dcdcdc; background-color:white; height:100%; padding-bottom:30px; width:100%;}
 footer section.footer{width:1170px; margin:0 auto; margin-top:60px;}
 footer section.footer dl{width:292px; float:left;}
-footer section.footer dl dt{font-size:14px; font-weight:bold; color:black; margin-bottom:40px;}
+footer section.footer dl dt{font-size:14px; font-weight:bold; color:#bbb; margin-bottom:40px;}
 footer section.footer dl dd{margin-top:5px;}
-footer section.footer dl dd a{color:black; font-size:14px;}
+footer section.footer dl dd a{color:#bbb; font-size:14px;}
 footer section.footer div.sns_link span{margin-right:10px;}
-footer section.footer div.copyright{clear:both; color:black; padding-top:15px;}
+footer section.footer div.copyright{clear:both; color:#808080; padding-top:15px;}
 
 section.map{width:760px; height:100%; float:left;}
 
@@ -592,7 +592,7 @@ div.image_list_wrap div.left{background:url(/image/cmn/img_arrow_left.png) no-re
 div.image_list_wrap div.right{background:url(/image/cmn/img_arrow_right.png) no-repeat right center; right:0;}
 div.image_list_wrap div.on{opacity:1;}
 
-div.pager{clear:both; border-top:1px solid #d5d5d5; padding:29px 0; margin-left:20px; font-size:20px; overflow:hidden;}
+div.pager{clear:both; border-top:1px solid #d5d5d5; padding:29px 0; margin-left:20px; margin-right:20px; font-size:20px; overflow:hidden; float: right;}
 div.pager div.num_result{font-size:14px; color:#202020; margin-bottom:26px; float:left; margin:0 20px;}
 div.pager div.paging{float:right; margin:0 20px;}
 div.pager div.paging li{float:left;}
@@ -1793,9 +1793,7 @@ div.editmobile input.input{padding:0 10px; box-sizing: border-box; -webkit-box-s
 
 div.pop_cancel_policy dl dt{font-weight:bold; font-size:1.2em; margin-top:20px;}
 dd.highlight{color:#ed1c24;}
-#black {
-  color:black;
-}
+
 /* bootstrap */ 
 .dropdown-menu {
   position: absolute;
