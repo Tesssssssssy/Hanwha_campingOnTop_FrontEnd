@@ -293,6 +293,9 @@ main {
     max-width: 1180px;
     margin: 0 auto;
   }
+
+.label {
+  margin-bottom: 10px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

@@ -25,188 +25,152 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 
 <body class="index">
   <div id="fb-root"></div>
   <header>
     <div class="navbar_menu">
-      <button class="btn" type="button" id="menu_close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
-          viewBox="0 0 16 16">
-          <path
-            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-        </svg>
-      </button>
-      <ul class="navbar_nav">
-        <li class="nav-item active">
-          <a href="#">위시리스트</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" target="_blank">자주하는 질문 FAQ</a>
+        <button class="btn" type="button" id="menu_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+        </button>
+        <ul class="navbar_nav">
+            <li class="nav-item active">
+                <a href="#">위시리스트</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" target="_blank">자주하는 질문 FAQ</a>
 
-        </li>
-        <li class="nav-item">
-          <a href="#" target="_blank">호스트 센터</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" target="_blank">위홈 알아보기</a>
-        </li>
+            </li>
+            <li class="nav-item">
+                <a href="#" target="_blank">호스트 센터</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" target="_blank">위홈 알아보기</a>
+            </li>
 
-        <li class="nav-item">
-          <div class="dropdown">
-            <button class="btn dropdown-toggle right_arrow" id="language_menu" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img src="/assets/images/header/globe-solid.svg" width="22">
-              한국어 </button>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle right_arrow" id="language_menu" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="/assets/images/header/globe-solid.svg" width="22">
+                        한국어 </button>
 
-            <div class="dropdown-menu" aria-labelledby="language_menu" data-clang="kr">
-              <a class="dropdown-item" href="/ko" data-lang="kr">한국어
+                    <div class="dropdown-menu" aria-labelledby="language_menu" data-clang="kr">
+                        <a class="dropdown-item" href="/ko" data-lang="kr">한국어
 
-                <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
-                    <path
-                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                  </svg></span>
+                            <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></span>
 
-              </a>
-              <a class="dropdown-item" href="/en" data-lang="en">English
-              </a>
+                        </a>
+                        <a class="dropdown-item" href="/en" data-lang="en">English
+                        </a>
 
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button class="btn dropdown-toggle" id="menucurrency" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <img src="/assets/images/header/won-sign-solid.svg" width="21">
-              KRW </button>
-            <div class="dropdown-menu sub_menucurrency" aria-labelledby="menucurrency" data-currency="KRW">
-              <a class="dropdown-item" href="#" data-currency="KRW">KRW</a>
-              <a class="dropdown-item" href="#" data-currency="USD">USD</a>
-              <a class="dropdown-item" href="#" data-currency="AUD">AUD</a>
-              <a class="dropdown-item" href="#" data-currency="CAD">CAD</a>
-              <a class="dropdown-item" href="#" data-currency="CNY">CNY</a>
-              <a class="dropdown-item" href="#" data-currency="EUR">EUR</a>
-              <a class="dropdown-item" href="#" data-currency="GBP">GBP</a>
-              <a class="dropdown-item" href="#" data-currency="HKD">HKD</a>
-              <a class="dropdown-item" href="#" data-currency="IDR">IDR</a>
-              <a class="dropdown-item" href="#" data-currency="INR">INR</a>
-              <a class="dropdown-item" href="#" data-currency="JPY">JPY</a>
-              <a class="dropdown-item" href="#" data-currency="MYR">MYR</a>
-              <a class="dropdown-item" href="#" data-currency="PHP">PHP</a>
-              <a class="dropdown-item" href="#" data-currency="RUB">RUB</a>
-              <a class="dropdown-item" href="#" data-currency="SGD">SGD</a>
-              <a class="dropdown-item" href="#" data-currency="THB">THB</a>
-              <a class="dropdown-item" href="#" data-currency="TWD">TWD</a>
-            </div>
-          </div>
-        </li>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" id="menucurrency" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="/assets/images/header/won-sign-solid.svg" width="21">
+                        KRW </button>
+                    <div class="dropdown-menu sub_menucurrency" aria-labelledby="menucurrency" data-currency="KRW">
+                        <a class="dropdown-item" href="#" data-currency="KRW">KRW</a>
+                        <a class="dropdown-item" href="#" data-currency="USD">USD</a>
+                        <a class="dropdown-item" href="#" data-currency="AUD">AUD</a>
+                        <a class="dropdown-item" href="#" data-currency="CAD">CAD</a>
+                        <a class="dropdown-item" href="#" data-currency="CNY">CNY</a>
+                        <a class="dropdown-item" href="#" data-currency="EUR">EUR</a>
+                        <a class="dropdown-item" href="#" data-currency="GBP">GBP</a>
+                        <a class="dropdown-item" href="#" data-currency="HKD">HKD</a>
+                        <a class="dropdown-item" href="#" data-currency="IDR">IDR</a>
+                        <a class="dropdown-item" href="#" data-currency="INR">INR</a>
+                        <a class="dropdown-item" href="#" data-currency="JPY">JPY</a>
+                        <a class="dropdown-item" href="#" data-currency="MYR">MYR</a>
+                        <a class="dropdown-item" href="#" data-currency="PHP">PHP</a>
+                        <a class="dropdown-item" href="#" data-currency="RUB">RUB</a>
+                        <a class="dropdown-item" href="#" data-currency="SGD">SGD</a>
+                        <a class="dropdown-item" href="#" data-currency="THB">THB</a>
+                        <a class="dropdown-item" href="#" data-currency="TWD">TWD</a>
+                    </div>
+                </div>
+            </li>
 
-      </ul>
+        </ul>
 
     </div>
 
     <div class="top_wrapper fixed-top">
-      <div class="header_right_m">
-        <a href="#" class="btn_noti btn">
-          <img src="/assets/images/header/bell-solid.svg" alt="" height="21" />
-        </a>
+        <div class="header_right_m">
+            <a href="#" class="btn_noti btn">
+                <img src="/assets/images/header/bell-solid.svg" alt="" height="21" />
+            </a>
 
-        <button class="btn" id="btn_menu"><img src="/assets/images/header/bars-solid.svg" alt="Menu"
-            height="21" /></button>
-      </div>
+            <button class="btn" id="btn_menu"><img src="/assets/images/header/bars-solid.svg"
+                    alt="Menu" height="21" /></button>
+        </div>
 
 
-      <ul class="top_menu nav justify-content-end">
-        <li class="nav-item">
-          <div class="dropdown change_cont">
-            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="/assets/images/header/globe-solid.svg" width="21">
-              한국어 </button>
+        <ul class="top_menu nav justify-content-end">
+            <li class="nav-item">
+                <div class="dropdown change_cont">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="/assets/images/header/globe-solid.svg" width="21">
+                        한국어 </button>
 
-            <div class="dropdown-menu" data-clang="kr">
-              <a class="dropdown-item" href="/ko" data-lang="kr">한국어
+                    <div class="dropdown-menu" data-clang="kr">
+                        <a class="dropdown-item" href="/ko" data-lang="kr">한국어
 
-                <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
-                    <path
-                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
-                  </svg></span>
+                            <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                                </svg></span>
 
-              </a>
-              <a class="dropdown-item" href="/en" data-lang="en">English
+                        </a>
+                        <a class="dropdown-item" href="/en" data-lang="en">English
 
-              </a>
+                        </a>
+                       
 
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown change_cont">
-            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="/assets/images/header/coins-solid.svg" alt="" width="21" />
-              KRW </button>
-            <div class="dropdown-menu sub_menucurrency" data-currency="KRW">
-              <a class="dropdown-item" href="#" data-currency="KRW">KRW</a>
-              <a class="dropdown-item" href="#" data-currency="USD">USD</a>
-              <a class="dropdown-item" href="#" data-currency="AUD">AUD</a>
-              <a class="dropdown-item" href="#" data-currency="CAD">CAD</a>
-              <a class="dropdown-item" href="#" data-currency="CNY">CNY</a>
-              <a class="dropdown-item" href="#" data-currency="EUR">EUR</a>
-              <a class="dropdown-item" href="#" data-currency="GBP">GBP</a>
-              <a class="dropdown-item" href="#" data-currency="HKD">HKD</a>
-              <a class="dropdown-item" href="#" data-currency="IDR">IDR</a>
-              <a class="dropdown-item" href="#" data-currency="INR">INR</a>
-              <a class="dropdown-item" href="#" data-currency="JPY">JPY</a>
-              <a class="dropdown-item" href="#" data-currency="MYR">MYR</a>
-              <a class="dropdown-item" href="#" data-currency="PHP">PHP</a>
-              <a class="dropdown-item" href="#" data-currency="RUB">RUB</a>
-              <a class="dropdown-item" href="#" data-currency="SGD">SGD</a>
-              <a class="dropdown-item" href="#" data-currency="THB">THB</a>
-              <a class="dropdown-item" href="#" data-currency="TWD">TWD</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown change_cont">
-            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="/assets/images/header/circle-info-solid.svg" alt="" width="21" />
-              도움말 </button>
-            <div class="dropdown-menu" data-currency="KRW">
-              <a class="dropdown-item" href="#" target="_blank">위홈
-                알아보기</a>
-              <a class="dropdown-item" href="#" target="_blank">자주하는 질문
-                FAQ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown change_cont">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="/assets/images/header/coins-solid.svg" alt="" width="21" />
+                        KRW </button>
+                   
+                </div>
+            </li>
+            <li class="nav-item">
+                
+            </li>
+            <li class="nav-item">
+                
 
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="header_right my-auto">
-            <div class="login">
-              <a href="login.html" class="btn" id="btn_login">
-                <img src="/assets/images/header/user-solid.svg" alt="로그인" width="26" />
-                로그인 </a>
-            </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link wehomehost_btn btn">호스트되기</a>
+            </li>
+        </ul>
 
-          </div>
-
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link wehomehost_btn btn">호스트되기</a>
-        </li>
-      </ul>
-
-      <div class="head_logo">
-        <a href="#" class="logo my-auto"><img src="/assets/images/home/logo.png" alt="Welcome home! Wehome"
-            width="111" /></a>
-      </div>
-
+        <div class="head_logo">
+            <a href="#" class="logo my-auto"><img src="/assets/images/home/logo.png"
+                    alt="Welcome home! Wehome" width="111" /></a>
+        </div>
 
 
       <section id="search">
@@ -378,9 +342,17 @@
                   <img :src="image" alt="" loading="lazy" width="100%" />
                   <div class="swiper-lazy-preloader"></div>
                 </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/assets/images/home/arrow-down-short-wide-solid.svg" alt="" loading="lazy" width="100%" />
+                  <div class="swiper-lazy-preloader"></div>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt="<" /></div>
+              <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt=">" /></div>
               <div class="swiper-button-next2"><img src="/assets/images/header/chevron-right-solid.svg" alt=">" /></div>
 
               <span class="btn_fav" :data-id="house.id">
@@ -689,7 +661,11 @@
 
     });
 
-
+    var main_slide_option = {
+    // 기존의 다른 옵션들...
+    slidesPerView: 5,
+    // 필요한 경우 다른 옵션들을 추가할 수 있습니다.
+    };
     var main_swiper = new Swiper(".p_images", main_slide_option);
 
     var banner_slide = new Swiper('.banner_swipe', {
@@ -707,7 +683,7 @@
       breakpoints: {
 
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 16
         },
       }
@@ -715,9 +691,39 @@
     });
     */
   </script>
+  <script type="text/javascript">
+    var userLogged = false;
+    var _3c727482a3e7fba0b6d69ab3bf66be80 = true;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+<!-- 여기서부터 챗봇 관련 스크립트를 제거했습니다. -->
 
-  <script>
-    window.onscroll = function () { scrollFunction() };
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+<script type="text/javascript">
+    if (!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "s_55a46413aef5";
+    if (!_nasa) var _nasa = {};
+    wcs.inflow();
+    wcs_do(_nasa);
+</script>
+<script>
+    var LANG = { /* 여기에는 다국어 지원을 위한 언어 문자열이 포함되어 있습니다. */ };
+    function translate(t) {
+        if (!LANG[t]) return t; return LANG[t];
+    }
+</script>
+<!-- AceCounter Log Gathering Script V.8.0.AMZ2019080601 -->
+<script language='javascript'>
+    /* AceCounter 로깅 스크립트 */
+</script>
+  <!-- AceCounter Log Gathering Script End -->
+    <script>
+      window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -752,6 +758,32 @@
       $('html, body').animate({ scrollTop: $('body').height() }, 500);
     }
   </script>
+  <script>
+    // 문서가 준비되면 실행
+    document.addEventListener('DOMContentLoaded', function () {
+      // 'p_images' 클래스를 가진 모든 슬라이더를 찾아 각각 초기화
+      var allImageSliders = document.querySelectorAll('.p_images');
+  
+      allImageSliders.forEach(function (sliderElement) {
+        var swiper = new Swiper(sliderElement, {
+          // 여기에 원하는 Swiper 옵션 추가
+          loop: true, // 무한 반복 모드
+          pagination: {
+            el: '.swiper-pagination', // 페이지네이션 설정
+            clickable: true, // 클릭 가능한 페이지네이션 버튼
+          },
+          navigation: {
+            nextEl: '.swiper-button-next2', // 다음 버튼 클래스명
+            prevEl: '.swiper-button-prev2', // 이전 버튼 클래스명
+          },
+          lazy: {
+            loadPrevNext: true, // 현재 슬라이드의 이전과 다음 슬라이드를 미리 로드
+          }
+        });
+      });
+    });
+  </script>
+  
 </body>
 
 </html>
