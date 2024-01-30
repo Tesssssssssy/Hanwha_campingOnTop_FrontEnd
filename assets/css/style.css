@@ -34,7 +34,7 @@ ul{list-style:none;}
 img{vertical-align:middle; /* for IE image margin */}
 html{text-align:center; height:100%; -webkit-text-size-adjust:none;}
 body{font-family:"yg-jalnan", "Nanum Gothic";
- font-size:12px; color:#202020; text-align:left; background-color:#f6f6f6;}
+ font-size:12px; color:#202020; text-align:left; background-color:white}
 img.loading{display:none;}
 div#loading{position:relative;background:#fff;padding:20px;width: auto;max-width:500px;margin:20px auto; font-size:14px; font-weight:bold;}
 input[type="submit"]{-webkit-appearance:button; -webkit-border-radius:0;}
@@ -198,7 +198,7 @@ div.center{text-align:center;}
 
 main{width:100%;}  
 header{background-color:#fff; position:relative; z-index:10; border-bottom:1px solid #dcdcdc;}
-header.top nav{width:1170px; margin:0 auto; height:50px; background-color:#fff;}
+header.top nav{width:1170px; margin:0 auto; padding: 7px; height:50px; background-color:#fff;}
 header.top nav a.logo img{margin-top:7px;}
 header.content nav a.logo img{margin-top:0px;}
 header.top nav div.menu{float:right; margin-top:9px;}
@@ -407,14 +407,14 @@ section.certi dl dt span{font-size:20px; font-weight:normal;}
 section.certi dl dd{margin-left:150px; font-size:14px; color:#808080;}
 section.certi dl dd a{color:#0082d0; margin-top:20px; display:block;}
 
-footer{border-top:1px solid #dcdcdc; background-color:#4b4b4d; height:100%; padding-bottom:30px; width:100%;}
+footer{border-top:1px solid #dcdcdc; background-color:white; height:100%; padding-bottom:30px; width:100%;}
 footer section.footer{width:1170px; margin:0 auto; margin-top:60px;}
 footer section.footer dl{width:292px; float:left;}
-footer section.footer dl dt{font-size:14px; font-weight:bold; color:#bbb; margin-bottom:40px;}
+footer section.footer dl dt{font-size:14px; font-weight:bold; color:black; margin-bottom:40px;}
 footer section.footer dl dd{margin-top:5px;}
-footer section.footer dl dd a{color:#bbb; font-size:14px;}
+footer section.footer dl dd a{color:black; font-size:14px;}
 footer section.footer div.sns_link span{margin-right:10px;}
-footer section.footer div.copyright{clear:both; color:#808080; padding-top:15px;}
+footer section.footer div.copyright{clear:both; color:black; padding-top:15px;}
 
 section.map{width:760px; height:100%; float:left;}
 
@@ -592,7 +592,7 @@ div.image_list_wrap div.left{background:url(/image/cmn/img_arrow_left.png) no-re
 div.image_list_wrap div.right{background:url(/image/cmn/img_arrow_right.png) no-repeat right center; right:0;}
 div.image_list_wrap div.on{opacity:1;}
 
-div.pager{clear:both; border-top:1px solid #d5d5d5; padding:29px 0; overflow:hidden;}
+div.pager{clear:both; border-top:1px solid #d5d5d5; padding:29px 0; margin-left:20px; font-size:20px; overflow:hidden;}
 div.pager div.num_result{font-size:14px; color:#202020; margin-bottom:26px; float:left; margin:0 20px;}
 div.pager div.paging{float:right; margin:0 20px;}
 div.pager div.paging li{float:left;}
@@ -749,7 +749,7 @@ section#conditions h2{padding:26px 24px;}
 section#conditions h3{font-size:18px; color:#202020; padding: 0 26px 26px;}
 section#conditions ul{border-top:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc; margin-bottom:40px;}
 section#conditions ul li{clear:both; height:39px; line-height:39px; background-color:#fff; padding:0 26px; font-size:16px; color:#202020;}
-section#conditions ul li:nth-child(odd){background-color:#f6f6f6; }
+section#conditions ul li:nth-child(odd){background-color:white; }
 section#conditions ul li span.right{float:right; padding-left:32px;}
 section#conditions ul li span.price{width:80px; text-align:right;}
 section#conditions ul li span.def{font-weight:bold;}
@@ -1793,7 +1793,9 @@ div.editmobile input.input{padding:0 10px; box-sizing: border-box; -webkit-box-s
 
 div.pop_cancel_policy dl dt{font-weight:bold; font-size:1.2em; margin-top:20px;}
 dd.highlight{color:#ed1c24;}
-
+#black {
+  color:black;
+}
 /* bootstrap */ 
 .dropdown-menu {
   position: absolute;

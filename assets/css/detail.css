@@ -1,0 +1,72 @@
+/* 기본 스타일 설정 */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* 상단 타이틀 및 네비게이션 바 스타일 */
+.title h1 {
+    font-size: 24px;
+    color: #333;
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* 슬라이더 컨테이너 스타일 */
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /* 이미지가 컨테이너를 벗어나지 않도록 설정 */
+}
+
+.slider li {
+    display: inline-block;
+}
+
+/* 이미지 슬라이더 내부의 대형 이미지 스타일 */
+.big_image_wrap img {
+    width: 100%;
+    height: auto;
+    display: block; /* 이미지가 차지하는 영역을 명확히 설정 */
+}
+
+/* 이미지 썸네일 목록 스타일 */
+.image_thumb a {
+    display: inline-block;
+    margin: 8px;
+}
+
+.image_thumb img {
+    width: 100px; /* 썸네일 크기 */
+    height: auto;
+}
+
+/* 상세 정보 테이블 스타일 */
+.type_detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.type_detail td {
+    padding: 8px;
+    border: 1px solid #eaeaea;
+}
+
+/* 설명 및 기타 텍스트 섹션 스타일 */
+.description {
+    padding: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 페이지 하단 부분 스타일 */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
