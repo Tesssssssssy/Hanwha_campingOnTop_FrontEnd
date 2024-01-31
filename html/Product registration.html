@@ -321,7 +321,7 @@
             <a href="#" data-type="1">1</a>
         </li>
         <li class="type">
-            <a href="#" class="sel" data-type="2">2</a>
+            <a href="#" data-type="2">2</a>
         </li>
         <li class="type">
             <a href="#" data-type="3">3</a>
@@ -379,34 +379,34 @@
     </ul>
  <div class="input-group">
     <label for="name">숙소 이름 : </label>
-    <input type="text" id="name" name="name">
+    <input class="input-group-type" type="text" id="name" name="name">
 </div>
 <br>
 <div class="input-group">
     <label for="content">숙소 소개 : </label>
-    <input type="text" id="content" name="content">
+    <input class="input-group-type" type="text" id="content" name="content">
 </div>
 <br>
 <div class="input-group">
     <label for="price">숙소 가격 : </label>
-    <input type="number" id="price" name="price">
+    <input class="input-group-type" type="number" id="price" name="price">
 </div>
 <br>
 <div class="input-group">
         <label for="address">숙소 주소 : </label><br>
-        <input type="text" id="address" name="address">
+        <input class="input-group-type" type="text" id="address" name="address">
     </div>
     <br>
     <div class="input-group">
         <label for="latitude">숙소 위도 : </label><br>
-        <input type="number" id="latitude" name="latitude">
+        <input class="input-group-type" type="number" id="latitude" name="latitude">
     </div>
     <div class="input-group">
-        <label for="longitude">숙소 경도 : </label><br>
-        <input type="number" id="longitude" name="longitude">
+        <label id="longitude" for="longitude">숙소 경도 : </label><br>
+        <input class="input-group-type" type="number" id="longitude" name="longitude">
     </div>
         <div class="input-group">
-          <label for="hasImeage">숙소 이미지 : </label>
+          <label id="hasImeage" for="hasImeage">숙소 이미지 : </label>
          <input type="file" id="hasImeage" name="hasImage"><br>
         </div>
         <br class="checkbox">
@@ -736,6 +736,20 @@
       // 수정된 부분: '#doz_footer' 대신에 'body'로 스크롤
       $('html, body').animate({ scrollTop: $('body').height() }, 500);
     }
+  </script>
+  <script>
+    document.querySelectorAll('.type a').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+        // 기존에 선택된 항목의 'selected' 클래스 제거
+        document.querySelectorAll('.type a').forEach(function(el) {
+            el.classList.remove('selected');
+        });
+        // 클릭된 항목에 'selected' 클래스 추가
+        event.target.classList.add('selected');
+        // 기본 동작 방지 (링크 이동 방지)
+        event.preventDefault();
+    });
+});
   </script>
 </body>
 
