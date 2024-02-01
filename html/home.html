@@ -39,10 +39,10 @@
       </button>
       <ul class="navbar_nav">
         <li class="nav-item active">
-          <a href="#">좋아요</a>
+          <a href="/like">좋아요</a>
         </li>
         <li class="nav-item">
-          <a href="#" target="_blank">장바구니</a>
+          <a href="/cart" target="_blank">장바구니</a>
 
         </li>
         <li class="nav-item">
@@ -83,8 +83,8 @@
                   <span id="user_nickname"></span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="btn_logout">
-                  <a class="dropdown-item" href="mypage.html">좋아요</a>
-                  <a class="dropdown-item" href="mypage.html">장바구니</a>
+                  <a class="dropdown-item" href="like.html">좋아요</a>
+                  <a class="dropdown-item" href="cart.html">장바구니</a>
                   <a class="dropdown-item" href="home.html" onclick="logout()">로그아웃</a>
                 </div>
               </div>
@@ -283,10 +283,9 @@
               <div class="swiper-pagination"></div>
               <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt=">" /></div>
               <div class="swiper-button-next2"><img src="/assets/images/header/chevron-right-solid.svg" alt=">" /></div>
-
               <span class="btn_fav" :data-id="house.id">
                 <img src="/assets/images/header/heart-regular.svg" alt="Like" class="heart" width="17" />
-                <img src="/assets/images/header/ic_heart_on.png" alt="Like" class="heart_on d-none" width="17" />
+                <img src="/assets/images/header/heart-solid.svg" alt="Like" class="heart_on d-none" width="17" />
               </span>
             </div>
             <div class="card-body">
