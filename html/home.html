@@ -28,7 +28,7 @@
 
 <body class="index">
   <div id="fb-root"></div>
-  <header>
+ <header>
     <div class="navbar_menu">
       <button class="btn" type="button" id="menu_close">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
@@ -228,7 +228,7 @@
       </section>
 
     </div>
-  </header>
+  </header> 
 
 
   <main>
@@ -286,10 +286,9 @@
               <div class="swiper-pagination"></div>
               <div class="swiper-button-prev2"><img src="/assets/images/header/chevron-left-solid.svg" alt=">" /></div>
               <div class="swiper-button-next2"><img src="/assets/images/header/chevron-right-solid.svg" alt=">" /></div>
-
               <span class="btn_fav" :data-id="house.id">
                 <img src="/assets/images/header/heart-regular.svg" alt="Like" class="heart" width="17" />
-                <img src="/assets/images/header/ic_heart_on.png" alt="Like" class="heart_on d-none" width="17" />
+                <img src="/assets/images/header/heart-solid.svg" alt="Like" class="heart_on d-none" width="17" />
               </span>
             </div>
             <div class="card-body">
@@ -665,7 +664,7 @@
       });
     });
   </script>
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', function () {
       // 모든 하트 아이콘에 이벤트 리스너 추가
       document.querySelectorAll('.btn_fav').forEach(item => {
