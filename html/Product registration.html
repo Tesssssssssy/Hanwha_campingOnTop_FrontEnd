@@ -68,6 +68,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/Product registration.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -87,17 +88,72 @@
       </button>
       <ul class="navbar_nav">
         <li class="nav-item active">
-          <a href="#">좋아요</a>
+          <a href="#">위시리스트</a>
         </li>
         <li class="nav-item">
-          <a href="#" target="_blank">장바구니</a>
+          <a href="#" target="_blank">자주하는 질문 FAQ</a>
 
         </li>
         <li class="nav-item">
-          <a href="#" target="_blank">로그아웃</a>
+          <a href="#" target="_blank">호스트 센터</a>
         </li>
-        
+        <li class="nav-item">
+          <a href="#" target="_blank">위홈 알아보기</a>
+        </li>
+
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle right_arrow" id="language_menu" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="/assets/images/header/globe-solid.svg" width="22">
+              한국어 </button>
+
+            <div class="dropdown-menu" aria-labelledby="language_menu" data-clang="kr">
+              <a class="dropdown-item" href="/ko" data-lang="kr">한국어
+
+                <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                    <path
+                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                  </svg></span>
+
+              </a>
+              <a class="dropdown-item" href="/en" data-lang="en">English
+              </a>
+
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" id="menucurrency" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <img src="/assets/images/header/won-sign-solid.svg" width="21">
+              KRW </button>
+            <div class="dropdown-menu sub_menucurrency" aria-labelledby="menucurrency" data-currency="KRW">
+              <a class="dropdown-item" href="#" data-currency="KRW">KRW</a>
+              <a class="dropdown-item" href="#" data-currency="USD">USD</a>
+              <a class="dropdown-item" href="#" data-currency="AUD">AUD</a>
+              <a class="dropdown-item" href="#" data-currency="CAD">CAD</a>
+              <a class="dropdown-item" href="#" data-currency="CNY">CNY</a>
+              <a class="dropdown-item" href="#" data-currency="EUR">EUR</a>
+              <a class="dropdown-item" href="#" data-currency="GBP">GBP</a>
+              <a class="dropdown-item" href="#" data-currency="HKD">HKD</a>
+              <a class="dropdown-item" href="#" data-currency="IDR">IDR</a>
+              <a class="dropdown-item" href="#" data-currency="INR">INR</a>
+              <a class="dropdown-item" href="#" data-currency="JPY">JPY</a>
+              <a class="dropdown-item" href="#" data-currency="MYR">MYR</a>
+              <a class="dropdown-item" href="#" data-currency="PHP">PHP</a>
+              <a class="dropdown-item" href="#" data-currency="RUB">RUB</a>
+              <a class="dropdown-item" href="#" data-currency="SGD">SGD</a>
+              <a class="dropdown-item" href="#" data-currency="THB">THB</a>
+              <a class="dropdown-item" href="#" data-currency="TWD">TWD</a>
+            </div>
+          </div>
+        </li>
+
       </ul>
+
     </div>
 
     <div class="top_wrapper fixed-top">
@@ -105,6 +161,7 @@
         <a href="#" class="btn_noti btn">
           <img src="/assets/images/header/bell-solid.svg" alt="" height="21" />
         </a>
+
         <button class="btn" id="btn_menu"><img src="/assets/images/header/bars-solid.svg" alt="Menu"
             height="21" /></button>
       </div>
@@ -112,34 +169,79 @@
 
       <ul class="top_menu nav justify-content-end">
         <li class="nav-item">
-          <div class="header_right my-auto">
-            <div class="login">
-              <a href="login.html" class="btn" id="btn_login">
-                <img src="/assets/images/header/user-solid.svg" alt="로그인" width="21" />
-                로그인
+          <div class="dropdown change_cont">
+            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="/assets/images/header/globe-solid.svg" width="21">
+              한국어 </button>
+
+            <div class="dropdown-menu" data-clang="kr">
+              <a class="dropdown-item" href="/ko" data-lang="kr">한국어
+
+                <span class="float-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                    <path
+                      d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z" />
+                  </svg></span>
+
               </a>
+              <a class="dropdown-item" href="/en" data-lang="en">English
+
+              </a>
+
             </div>
           </div>
         </li>
         <li class="nav-item">
-          <div class="header_right my-auto" id="sub_mymenu" style="display: none;">
-            <div class="login">
-              <div class="dropdown">
-                <a href="home.html" class="btn dropdown-toggle" id="btn_logout" data-toggle="dropdown"
-                  aria-haspopup="true">
-                  <img src="/assets/images/header/user-solid.svg" alt="로그아웃" width="21" />
-                  <span id="user_nickname"></span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="btn_logout">
-                  <a class="dropdown-item" href="mypage.html">좋아요</a>
-                  <a class="dropdown-item" href="mypage.html">장바구니</a>
-                  <a class="dropdown-item" href="home.html" onclick="logout()">로그아웃</a>
-                </div>
-              </div>
+          <div class="dropdown change_cont">
+            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="/assets/images/header/coins-solid.svg" alt="" width="21" />
+              KRW </button>
+            <div class="dropdown-menu sub_menucurrency" data-currency="KRW">
+              <a class="dropdown-item" href="#" data-currency="KRW">KRW</a>
+              <a class="dropdown-item" href="#" data-currency="USD">USD</a>
+              <a class="dropdown-item" href="#" data-currency="AUD">AUD</a>
+              <a class="dropdown-item" href="#" data-currency="CAD">CAD</a>
+              <a class="dropdown-item" href="#" data-currency="CNY">CNY</a>
+              <a class="dropdown-item" href="#" data-currency="EUR">EUR</a>
+              <a class="dropdown-item" href="#" data-currency="GBP">GBP</a>
+              <a class="dropdown-item" href="#" data-currency="HKD">HKD</a>
+              <a class="dropdown-item" href="#" data-currency="IDR">IDR</a>
+              <a class="dropdown-item" href="#" data-currency="INR">INR</a>
+              <a class="dropdown-item" href="#" data-currency="JPY">JPY</a>
+              <a class="dropdown-item" href="#" data-currency="MYR">MYR</a>
+              <a class="dropdown-item" href="#" data-currency="PHP">PHP</a>
+              <a class="dropdown-item" href="#" data-currency="RUB">RUB</a>
+              <a class="dropdown-item" href="#" data-currency="SGD">SGD</a>
+              <a class="dropdown-item" href="#" data-currency="THB">THB</a>
+              <a class="dropdown-item" href="#" data-currency="TWD">TWD</a>
             </div>
           </div>
         </li>
+        <li class="nav-item">
+          <div class="dropdown change_cont">
+            <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="/assets/images/header/circle-info-solid.svg" alt="" width="21" />
+              도움말 </button>
+            <div class="dropdown-menu" data-currency="KRW">
+              <a class="dropdown-item" href="#" target="_blank">위홈
+                알아보기</a>
+              <a class="dropdown-item" href="#" target="_blank">자주하는 질문
+                FAQ</a>
 
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="header_right my-auto">
+            <div class="login">
+              <a href="#" class="btn" id="btn_login">
+                <img src="/assets/images/header/user-solid.svg" alt="로그인" width="26" />
+                로그인 </a>
+            </div>
+
+          </div>
+
+        </li>
         <li class="nav-item">
           <a href="#" class="nav-link wehomehost_btn btn">호스트되기</a>
         </li>
@@ -150,34 +252,190 @@
             width="111" /></a>
       </div>
 
+
+
+      
   </header>
-  <main>
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-    sdfgdgfhfdgjdfjfjfgjfg
-  </main>
+
+  <main class="newadd center">
+
+  <h1>숙소 등록하기</h1>  
+   
+<form name="frmAdd" method="post" action="/rooms/process_add">
+
+    <ul class="type" id="home_type">
+        <input type="hidden" name="home_type_value" id="home_type_value" value="">
+        <li class="title">숙소 형태</li>
+        
+        <li class="type">
+            <a href="#" data-type="1">              
+                옥탑            </a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="2">        
+                주택            </a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="24">         
+                민박           </a>
+        </li>
+     
+    
+        <li>
+            <div class="selectbox_arr big">
+                <span class="op_down"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                <select name="home_type" class="select_normal" id="home_type_sel">
+                    <option value="">기타</option>
+                    <option value="14">펜션</option>
+                    <option value="5">빌라</option>
+                    <option value="15">콘도</option>
+                    <option value="20">템플스테이</option>
+                    <option value="23">기타</option>
+                </select>
+            </div>
+        
+        </li>
+    </ul>
+    
+    <ul class="type" id="room_type">
+        <input type="hidden" name="room_type_value" id="room_type_value" value="">
+        <li class="title">객실종류</li>
+        <li class="type">
+            <a href="#" data-type="Entire home/apt">
+                집/아파트 전체            </a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="Private room">
+                전용실            </a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="Shared room">
+                다인실            </a>
+        </li>
+    </ul>
+    
+    <ul class="type circle" id="accommodates">
+        <input type="hidden" name="accommodates_value" id="accommodates_value" value="2">
+        <li class="title">숙박 인원</li>
+        <li class="type">
+            <a href="#" data-type="1">1</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="2">2</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="3">3</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="4">4</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="5">5</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="6">6</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="7">7</a>
+        </li>
+        <li class="type">
+            <a href="#" data-type="8">8</a>
+        </li>
+        
+        <li>
+            <div class="selectbox_arr big">
+                <span class="op_down"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                <select name="accommodates" class="select_normal" id="accommodates_sel">
+                    <option value="">기타</option>                    
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30+</option>
+                    
+                </select>
+            </div>
+        
+            
+        </li>
+        
+    </ul>
+ <div class="input-group">
+    <label for="name">숙소 이름 : </label>
+    <input class="input-group-type" type="text" id="name" name="name">
+</div>
+<br>
+<div class="input-group">
+    <label for="content">숙소 소개 : </label>
+    <input class="input-group-type" type="text" id="content" name="content">
+</div>
+<br>
+<div class="input-group">
+    <label for="price">숙소 가격 : </label>
+    <input class="input-group-type" type="number" id="price" name="price">
+</div>
+<br>
+<div class="input-group">
+        <label for="address">숙소 주소 : </label><br>
+        <input class="input-group-type" type="text" id="address" name="address">
+    </div>
+    <br>
+    <div class="input-group">
+        <label for="latitude">숙소 위도 : </label><br>
+        <input class="input-group-type" type="number" id="latitude" name="latitude">
+    </div>
+    <div class="input-group">
+        <label id="longitude" for="longitude">숙소 경도 : </label><br>
+        <input class="input-group-type" type="number" id="longitude" name="longitude">
+    </div>
+        <div class="input-group">
+          <label id="hasImeage" for="hasImeage">숙소 이미지 : </label>
+         <input type="file" id="hasImeage" name="hasImage"><br>
+        </div>
+        <br class="checkbox">
+        <h2 id="option">옵션  </h2>
+        <div class="checkbox">
+            <div>
+        <label for="hasAirConditioner">에어컨 </label><br>
+        <input type="checkbox" id="hasAirConditioner" name="hasAirConditioner"><br>
+          </div>
+          <div>
+        <label for="hasWashingMachine">세탁기 </label><br>
+        <input type="checkbox" id="hasWashingMachine" name="hasWashingMachine"><br>
+         </div>
+          <div>
+        <label for="hasBed">침대 </label><br>
+        <input type="checkbox" id="hasBed" name="hasBed"><br>
+         </div>
+           <div>
+          <label for="hasHeater">히터 </label><br>
+        <input type="checkbox" id="hasHeater" name="hasHeater"><br>
+         </div>
+        </div>
+      
+    <div class="btns">
+        <a href="#" id="next_btn" class="btn btn_red continue_btn">계속</a>
+    </div>
+    
+</form>
+</main>
 
 
   <nav>
@@ -479,48 +737,19 @@
       $('html, body').animate({ scrollTop: $('body').height() }, 500);
     }
   </script>
-   <script>
-    let token = window.localStorage.getItem('token');
-    var isLoggedIn = token !== null;
-
-    function toggleMenu() {
-      var loginButton = document.getElementById('btn_login');
-      var logoutButton = document.getElementById('btn_logout');
-      var myMenu = document.getElementById('sub_mymenu');
-      var userNicknameSpan = document.getElementById('user_nickname');
-
-      if (isLoggedIn) {
-        let decodedToken = decodeToken(token);
-        let userNickname = decodedToken.nickname;
-
-        if (loginButton) loginButton.style.display = 'none';
-        if (logoutButton) logoutButton.style.display = 'block';
-        if (myMenu) myMenu.style.display = 'block';
-
-        if (userNicknameSpan) userNicknameSpan.innerText = userNickname;
-      } else {
-        if (loginButton) loginButton.style.display = 'block';
-        if (logoutButton) logoutButton.style.display = 'none';
-        if (myMenu) myMenu.style.display = 'none';
-      }
-    }
-
-    // Function to decode JWT token
-    function decodeToken(token) {
-      const base64Url = token.split('.')[1];
-      const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-      const jsonPayload = decodeURIComponent(atob(base64).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
-
-      return JSON.parse(jsonPayload);
-    }
-
-    function logout() {
-      window.localStorage.removeItem('token');
-      toggleMenu();
-    }
-
-    // 페이지 로드 시 함수 실행
-    window.onload = toggleMenu;
+  <script>
+    document.querySelectorAll('.type a').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+        // 기존에 선택된 항목의 'selected' 클래스 제거
+        document.querySelectorAll('.type a').forEach(function(el) {
+            el.classList.remove('selected');
+        });
+        // 클릭된 항목에 'selected' 클래스 추가
+        event.target.classList.add('selected');
+        // 기본 동작 방지 (링크 이동 방지)
+        event.preventDefault();
+    });
+});
   </script>
 </body>
 
