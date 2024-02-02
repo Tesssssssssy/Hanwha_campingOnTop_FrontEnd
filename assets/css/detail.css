@@ -1,72 +1,182 @@
-/* 기본 스타일 설정 */
-body, h1, h2, h3, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+div.big_image{position:relative; z-index:0;}
+div.big_image li{text-align:center; height:438px;}
+div.big_image li div.big_image_wrap{display:table-cell; vertical-align:middle; height:438px; width:798px;}
+div.big_image ul li img{margin:0px; ; max-width:798px;}
+div.big_image a.control{display:none; position:absolute; top:0; width:200px; height:438px; background-color: rgba(0, 0, 0, 0); z-index:100;}
+div.big_image a.btn_prev{left:0; background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));}
+div.big_image a.btn_next{right:0; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));}
+div.big_image a.btn_prev img{margin-top:190px; margin-left:14px;}
+div.big_image a.btn_next img{margin-top:190px; margin-right:14px; float:right;}
+div.up_border, section.up_border{border-top:1px solid #ccc;}
+div.image_desc{padding:15px 24px; font-size:12px; color:#808080;}
+div.image_desc span.desc{background:url(/image/cmn/icon_tri.gif) left center no-repeat; padding-left:10px;}
+div.image_desc span.nodesc{background:#fff;}
+div.image_desc span.image_page{float:right;}
+div.image_desc img{vertical-align:middle;}
+div.image_thumb{background-color:#f0f0f0; padding:13px 13px 3px 13px; overflow:hidden; overflow-y:auto; max-height:207px;}
+div.image_thumb a{display:block; float:left; width:84px; height:54px; border:3px solid #f0f0f0; text-align:center; margin:0 5px 10px 0;}
+div.image_thumb a img{height:54px; max-width:84px;}
+div.image_thumb a.play{position:relative;}
+div.image_thumb a img.play_icon{position:absolute; top:5px; left:20px; height:auto; width:auto;}
+div.image_thumb a.sel{border:3px solid #ff3366;}
+
+main {
+    margin: 0 auto;
+    width :1200px
+    
+   
 }
 
-/* 상단 타이틀 및 네비게이션 바 스타일 */
-.title h1 {
-    font-size: 24px;
-    color: #333;
-    padding: 16px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #eaeaea;
-}
-
-/* 슬라이더 컨테이너 스타일 */
-.slider {
+.type_detail {
+    border-collapse: collapse;
     width: 100%;
-    margin: auto;
-    overflow: hidden; /* 이미지가 컨테이너를 벗어나지 않도록 설정 */
-}
-
-.slider li {
-    display: inline-block;
-}
-
-/* 이미지 슬라이더 내부의 대형 이미지 스타일 */
-.big_image_wrap img {
-    width: 100%;
-    height: auto;
-    display: block; /* 이미지가 차지하는 영역을 명확히 설정 */
-}
-
-/* 이미지 썸네일 목록 스타일 */
-.image_thumb a {
-    display: inline-block;
-    margin: 8px;
-}
-
-.image_thumb img {
-    width: 100px; /* 썸네일 크기 */
-    height: auto;
-}
-
-/* 상세 정보 테이블 스타일 */
-.type_detail table {
+  }
+  
+  .type_detail table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 16px;
-}
-
-.type_detail td {
+  }
+  
+  .type_detail td {
+    border: 1px solid #dddddd;
+    text-align: left;
     padding: 8px;
-    border: 1px solid #eaeaea;
-}
-
-/* 설명 및 기타 텍스트 섹션 스타일 */
-.description {
-    padding: 16px;
-    line-height: 1.6;
+  }
+  
+  .type_detail .dt {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .type_detail .dd {
     color: #666;
+  }
+  
+  /* 홀수 행에 대한 스타일 */
+  .type_detail tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* 짝수 행에 대한 스타일 */
+  .type_detail tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .amnt_list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* 페이지 하단 부분 스타일 */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 16px;
-    text-align: center;
+  .amnt_list dd {
+    width: 33%; /* 각 항목이 전체 너비의 1/3을 차지하도록 설정 */
+    box-sizing: border-box; /* 패딩과 보더가 너비에 포함되도록 설정 */
+    padding: 10px; /* 원하는 패딩 설정 */
+    /* 추가적인 스타일링 필요 */
+  }
+
+  /* 초기에 숨길 항목들을 위한 CSS */
+  .amnt_list dd:nth-child(n+4) {
+    display: none;
+  }
+
+   /* 더보기 버튼을 눌렀을 때 보여줄 항목들을 위한 CSS */
+   .show_more .amnt_list dd:nth-child(n+4) {
+    display: block;
+   }
+   #showMore {
+    border: none; /* 테두리 제거 */
+    color: skyblue; /* 글자 색상 하늘색으로 변경 */
+    background-color: transparent; /* 배경색 투명으로 설정 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    padding: 10px 20px; /* 패딩 조정 */
+    font-size: 16px; /* 글자 크기 조정 */
+    display: block; /* 블록 요소로 설정하여 가운데 정렬 가능하게 함 */
+    margin: 20px auto; /* 상하 마진 20px, 좌우 마진 자동으로 설정하여 가운데 정렬 */
+}
+#amenities {
+    margin-top: 10px;
+}
+.sul {
+    margin-top: 10px;
+}
+#rules { 
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#conditions {
+    padding-top: 10px;
+}
+.section2 {
+    border-top: 1px solid #e6e6e6; /* 상단에 테두리 추가 */
+    padding: 20px 0; /* 패딩 추가 */
+}
+
+.section2 h2,
+.section2 h3 {
+    color:#6200cd;
+    font-size: 24px; /* 제목의 글자 크기 설정 */ /* 제목의 글자 색상 설정 */
+    margin-bottom: 20px; /* 제목 아래 마진 추가 */
+}
+
+.section2 ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+}
+
+.section2 li {
+    display: flex; /* 항목들을 플렉스 박스로 표시 */
+    justify-content: space-between; /* 양쪽으로 내용을 분산 */
+    align-items: center; /* 세로 중앙 정렬 */
+    padding: 10px 0; /* 상하 패딩 추가 */
+    border-bottom: 1px solid #e6e6e6; /* 항목들 아래 테두리 추가 */
+}
+
+.section2 .desc {
+    font-size: 16px; /* 설명의 글자 크기 설정 */
+    color: #666; /* 설명의 글자 색상 설정 */
+}
+
+.section2 .price,
+.section2 .unit {
+    font-size: 16px; /* 가격과 단위의 글자 크기 설정 */
+    color: #333; /* 가격과 단위의 글자 색상 설정 */
+}
+
+.section2 .right {
+    text-align: right; /* 오른쪽 정렬 */
+}
+
+.section2 .policy {
+    color: #ff6b6b; /* 정책 글자 색상 설정 */
+}
+
+.cart_right {
+    display: block; /* 블록 레벨 요소로 표시 */
+    width: 100%; /* 전체 너비 사용 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin: 20px 0; /* 상하 마진 추가 */
+    padding: 15px 0; /* 패딩 추가 */
+    background-color: #ff6b6b; /* 배경 색상 설정 */
+    color: white; /* 글자 색상 설정 */
+    font-size: 20px; /* 글자 크기 설정 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    border: none; /* 테두리 제거 */
+}
+/* 가격과 단위를 담은 컨테이너를 오른쪽으로 정렬 */
+.price-container.right {
+    margin-left: auto;
+    display: flex;
+}
+.price {
+     margin-right: 30px;
+}
+.sang {
+    padding-top: 10px;
+}
+.star { 
+    color:#6800cd;
+}
+h2 {
+    color:#6200cd;
 }
