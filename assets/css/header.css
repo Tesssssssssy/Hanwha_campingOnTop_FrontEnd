@@ -313,8 +313,12 @@ body.sticky header div.head_logo {
   height: 0;
   margin: 0;
 }
-
-
+.login {
+  margin-top:4px
+}
+.wehomehost_btn {
+  margin-top:4px
+}
 .search_box {
   height: 56px;
   border: 1px solid #e0e0e0;
@@ -460,9 +464,7 @@ div#wh_fav_area div.area a:hover {
   padding: 0;
 }
 
-.header_right {
-  padding-top: 5px;
-}
+
 
 
 @media (max-width: 320px) {
@@ -484,7 +486,12 @@ div#wh_fav_area div.area a:hover {
   body {
     padding-top: 217px;
   }
-
+  .detailsBody {
+    padding-top: 160px;
+  }
+  .loginBody {
+    padding-top: 185px;
+  }
   header .header_right_m {
     display: none;
   }
